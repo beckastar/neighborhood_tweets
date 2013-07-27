@@ -1,0 +1,9 @@
+#!/Users/becka/Desktop/Final_Project/env/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'twitter==1.10.0','console_scripts','twitter-log'
+__requires__ = 'twitter==1.10.0'
+import sys
+from pkg_resources import load_entry_point
+
+sys.exit(
+   load_entry_point('twitter==1.10.0', 'console_scripts', 'twitter-log')()
+)

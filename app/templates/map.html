@@ -1,0 +1,104 @@
+<html>
+<head>
+  
+  <title>Google Maps Multiple Markers</title>
+  <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+</head>
+<body>
+  <div id="map" style="height: 400px; width: 500px;">
+</div>
+<script type="text/javascript">
+    var locations = [
+      // ['Seacliff', ,17]
+      // ['Nob Hill', ,16]
+      // ['Tenderloin', ,15]
+      // ['Civic Center', ,14]
+      // ['Saint Francis Woods', ,13]
+  //    ['Portola', ,12]
+//      ['Hunters Point', ,11]
+      ['Dogpatch',37.759122,-122.389538 ,10],
+      ['Potrero Heights',37.758977,122.406910 ,9],
+      ['Dolores Heights',37.757311,-122.433165 ,8],
+      // ['Hayes Valley',37.775907,-122.424525 ,7],
+      // ['Lower Haight',37.772116,122.430466 ,6],
+      // ['Upper Haight',37.769220,-122.448139 ,5],
+      // ['Crocker Amazon',37.711952,122.437584,4],
+      // ['Noe Valley', 37.750867,-122.433664, 3],
+      // ['The Castro', 37.760153,-122.431153, 2],
+      // ['Inner Mission', 37.761623,-122.414745, 1],
+      // ['Outer Mission', ,0]
+    ];
+    var Fillmore=[
+    //Geary and Van Ness
+    new google.maps.LatLng(37.786182,-122.421409),
+    //Geary and Baker
+    new google.maps.LatLng(37.783231,-122.442738),
+    //Turk and Broderick
+    new google.maps.LatLng(37.779907,-122.440356),
+    //St. Joseph's and Turk
+    new google.maps.LatLng(37.779789,-122.441),
+    //Divis and Turk
+    new google.maps.LatLng(37.779873,-122.438725),
+    //Divis and McAllister
+    new google.maps.LatLng(37.778211,-122.438339),
+    //Divis and Fulton
+    new google.maps.LatLng(37.77716,-122.43821),
+    //Fulton and Franklin
+    new google.maps.LatLng(37.779653,-122.421795),
+    //Franklin and McAllister
+    new google.map.LatLng(37.780331,-122.421859),
+    //McAllister and Van Ness
+    new google.map.LatLng(37.780501,-122.420314)
+    ];
+
+
+
+
+    new google.maps.LatLng()
+    new google.maps.LatLng()
+    new google.maps.LatLng()
+
+    ...
+    ]
+    var UpperHaight = []
+    
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 20,
+      center: new google.maps.LatLng(37.755108,-122.447569),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    for (var neighborhood in locations){
+        var neighborhoodCircle ={
+            map:map,
+            strokeColor: "#FF0000",
+            strokeWeight: 2,
+            strokeOpacity:1,
+            fillColor: 'FF0000',
+            fillOpacity: '1',
+            center: new google.maps.LatLng(neighborhood[1],neighborhood[2]),
+            radius: 600
+            //this is random! 
+        };
+        neighborhoodCircle = new google.maps.Circle(neighborhoodCircle);
+    }
+ 
+    var infowindow = new google.maps.InfoWindow();
+ 
+    var marker, i;
+ 
+    for (i = 0; i < locations.length; i++) { 
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+ 
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+</body>
+</html>
