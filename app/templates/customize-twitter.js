@@ -12,13 +12,14 @@ var CustomizeTwitterWidget = function(data) {
     }
 
     var notNumeric = function(n) {
-        //check to see if numeric value is a number 
+        //check to see if numeric value is a number - returns true if passes both tests
         return isNaN(parseFloat(n)) && isFinite(n);
     };
 //are tehse two necessary?
     var createCssElement = function(doc, url) {
         var link = doc.createElement("link");
         link.href = url;
+        //url is the css files
         link.rel = "stylesheet";
         link.type = "text/css";
         return link;
@@ -27,6 +28,8 @@ var CustomizeTwitterWidget = function(data) {
     var embedCss = function(doc, url) {
         var link = createCssElement(doc, url);
         var head = doc.getElementsByTagName("head")[0];
+        //declares head to be first element in a list, returns a list of elements with name "head"
+        //includes element in DOM dynamically
         head.appendChild(link);
     };
 
@@ -46,6 +49,7 @@ var CustomizeTwitterWidget = function(data) {
         for (var i = 0; i < frames.length; i++) {
             try {
                 if (isTwitterFrame(frames[i]) &&
+                    //isTwitterFrame and frames defined above
                     !contains(framesWithStyles, frames[i].name)
                 ) {
                     embedCss(frames[i].document, data.url);

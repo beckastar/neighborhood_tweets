@@ -1,0 +1,1170 @@
+I'm at I-80 Eastbound (San Francisco, CA) http://t.co/gZPilUGKsO 2013-08-01 01:24:18 {u'type': u'Point', u'coordinates': [-122.39311334, 37.78460898]}
+Geocoding: -122.39311334, 37.78460898
+Results: 6994 Bayshore Freeway, San Francisco, CA 94107, USA
+
+
+I'm at I-80 Eastbound (San Francisco, CA) http://t.co/gZPilUGKsO 2013-08-01 01:24:18 {u'type': u'Point', u'coordinates': [-122.39311334, 37.78460898]}
+Geocoding: -122.39311334, 37.78460898
+Results: 6994 Bayshore Freeway, San Francisco, CA 94107, USA
+
+
+Shaun Saunders of graffitipr Founder of the #SFPRSummit @ InterContinental San Francisco http://t.co/d35l8q9Rtz 2013-08-01 01:35:10 {u'type': u'Point', u'coordinates': [-122.40475416, 37.78184496]}
+Geocoding: -122.40475416, 37.78184496
+Results: 888 Howard Street, San Francisco, CA 94105, USA
+
+
+I'm at Market Street (San Francisco, CA) http://t.co/7DN2zs9mbd 2013-08-01 01:34:10 {u'type': u'Point', u'coordinates': [-122.40031242, 37.79011627]}
+Geocoding: -122.40031242, 37.79011627
+Results: 554 Market Street, San Francisco, CA 94104, USA
+
+
+I'm at @Yammer HQ (San Francisco, CA) http://t.co/XGfacQJcvi 2013-08-01 01:33:57 {u'type': u'Point', u'coordinates': [-122.41670609, 37.77678674]}
+Geocoding: -122.41670609, 37.77678674
+Results: 1355 Market Street, San Francisco, CA 94103, USA
+
+
+roof top view - yup we have arrived - :))) (@ san francisco) [pic]: http://t.co/A1myLZTnmd 2013-08-01 01:33:43 {u'type': u'Point', u'coordinates': [-122.39575482, 37.78413945]}
+Geocoding: -122.39575482, 37.78413945
+Results: 600 Harrison Street, San Francisco, CA 94107, USA
+
+
+I'm at @Safeway (San Francisco, CA) w/ 2 others http://t.co/ueFHukPMor 2013-08-01 01:32:53 {u'type': u'Point', u'coordinates': [-122.43176937, 37.78289217]}
+Geocoding: -122.43176937, 37.78289217
+Results: 99 Byington Street, San Francisco, CA 94115, USA
+
+
+I'm at Miyako Old Fashion Ice Cream Shop (San Francisco, CA) http://t.co/eCyMQBIGCQ 2013-08-01 01:32:15 {u'type': u'Point', u'coordinates': [-122.43310188, 37.78311282]}
+Geocoding: -122.43310188, 37.78311282
+Results: 1739 O'Farrell Street, San Francisco, CA 94118, USA
+
+
+I'm at Chaya Brasserie - @chayasf (San Francisco, CA) w/ 2 others http://t.co/AN1kbda8iO 2013-08-01 01:32:13 {u'type': u'Point', u'coordinates': [-122.39212864, 37.79323655]}
+Geocoding: -122.39212864, 37.79323655
+Results: 100-152 San Francisco Bicycle Route 5, San Francisco, CA 94105, USA
+
+
+I'm at @ForeignCinemaSf for Rebecca (1940) (San Francisco, CA) w/ 2 others http://t.co/srijPvcfzL 2013-08-01 01:50:39 {u'type': u'Point', u'coordinates': [-122.41936479, 37.75648758]}
+Geocoding: -122.41936479, 37.75648758
+Results: 2526 Mission Street, San Francisco, CA 94110, USA
+
+
+I'm at King of Thai Noodle House (San Francisco, CA) http://t.co/lPHm4NiWdv 2013-08-01 01:50:29 {u'type': u'Point', u'coordinates': [-122.40795457, 37.78640144]}
+Geocoding: -122.40795457, 37.78640144
+Results: 161 Powell Street, San Francisco, CA 94102, USA
+
+
+I'm at GYM San Francisco (Mexico City, DF) http://t.co/1T7rNgrXlD 2013-08-01 01:49:17 {u'type': u'Point', u'coordinates': [-99.17010784, 19.43187201]}
+Geocoding: -99.17010784, 19.43187201
+Results: Eje 2 Poniente (Río Tiber) 8, Cuauhtémoc, 06500 Mexico City, Federal District, Mexico
+
+
+> /Users/becka/Desktop/Final_Project/app/twitterlisten.py(46)<module>()
+-> print tweet.text, tweet.created_at, tweet.coordinates
+(Pdb) > /Users/becka/Desktop/Final_Project/app/twitterlisten.py(46)<module>()
+-> print tweet.text, tweet.created_at, tweet.coordinates
+(Pdb)  41  	
+ 42  	for tweet in tweepy.Cursor(api.search, q='san francisco').items(100):
+ 43  		#
+ 44  		if tweet.coordinates :
+ 45  			import pdb;pdb.set_trace()
+ 46  ->			print tweet.text, tweet.created_at, tweet.coordinates
+ 47  			coordinates = tweet.coordinates['coordinates']
+ 48  			#print coordinates
+ 49  	#		print gmaps.latlng_to_address(coordinates[0], coordinates[1])
+ 50  			#store into database
+ 51  			print "Geocoding: %r, %r" % (coordinates[0],coordinates[1])
+(Pdb) I'm at 5A5 Steak Lounge (San Francisco, CA) http://t.co/iaGgdHsBK9 2013-08-01 02:03:06 {u'type': u'Point', u'coordinates': [-122.40023732, 37.79672927]}
+Geocoding: -122.40023732, 37.79672927
+Results: 570 Battery Street, San Francisco, CA 94111, USA
+
+
+I'm at Vista North - Golden Gateway Apts (San Francisco, CA) http://t.co/aZ10SUtyEw 2013-08-01 02:02:19 {u'type': u'Point', u'coordinates': [-122.39907663, 37.79684924]}
+Geocoding: -122.39907663, 37.79684924
+Results: 151 Jackson Street, San Francisco, CA 94109, USA
+
+
+San Francisco I'm here. Perfect weather, I'm in love. http://t.co/y1lrNddbqs 2013-08-01 02:02:02 {u'type': u'Point', u'coordinates': [-122.38582272, 37.61477177]}
+Geocoding: -122.38582272, 37.61477177
+Results: International Terminal Departures, San Francisco International Airport (SFO), San Francisco, CA 94128, USA
+
+
+#sanfrancisco @ San Francisco International Airport (SFO) http://t.co/BJ3WdGcBWh 2013-08-01 02:01:51 {u'type': u'Point', u'coordinates': [-122.38627911, 37.61642405]}
+Geocoding: -122.38627911, 37.61642405
+Results: International Terminal Departures, San Francisco International Airport (SFO), Millbrae, CA 94030, USA
+
+
+I'm at Universidad Francisco Gavidia - @ufgoficial (San Salvador) w/ 4 others http://t.co/tsdvgMTjrq 2013-08-01 02:01:20 {u'type': u'Point', u'coordinates': [-89.22003508, 13.69994031]}
+Geocoding: -89.22003508, 13.69994031
+Results: Pje Olimpico, San Salvador, El Salvador
+
+
+Live music in San Francisco tonight, 7/31/13 at the Elbo Room 2013-08-01 02:01:02 {u'type': u'Point', u'coordinates': [-122.41858598, 37.76414577]}
+Geocoding: -122.41858598, 37.76414577
+Results: 163 Capp Street, San Francisco, CA 94110, USA
+
+
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 13 others http://t.co/zTVtJenrt9 2013-08-01 02:00:41 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+Geocoding: -122.3894012, 37.77833859
+Results: San Francisco Bay Trail, San Francisco, CA 94158, USA
+
+
+Op weg terug naar San Francisco! Morgen vliegen naar NL. 2013-08-01 02:00:17 {u'type': u'Point', u'coordinates': [-119.64563629, 37.33740047]}
+Geocoding: -119.64563629, 37.33740047
+Results: 40650 California 41, Oakhurst, CA 93644, USA
+
+
+I'm at Hotel Beresford (San Francisco, CA) http://t.co/4iQKBUTf3j 2013-08-01 01:58:18 {u'type': u'Point', u'coordinates': [-122.41099668, 37.78901416]}
+Geocoding: -122.41099668, 37.78901416
+Results: 656 Sutter Street, San Francisco, CA 94109, USA
+
+
+I'm at Chaya Brasserie - @chayasf (San Francisco, CA) w/ 3 others http://t.co/HCVSkDRVjk 2013-08-01 01:58:10 {u'type': u'Point', u'coordinates': [-122.39212864, 37.79323655]}
+Geocoding: -122.39212864, 37.79323655
+Results: 100-152 San Francisco Bicycle Route 5, San Francisco, CA 94105, USA
+
+
+I'm at @HiTopsSf (San Francisco, CA) http://t.co/Lc0XMzFmkV 2013-08-01 02:04:08 {u'type': u'Point', u'coordinates': [-122.43180788, 37.76493192]}
+Geocoding: -122.43180788, 37.76493192
+Results: 2247 Market Street, San Francisco, CA 94103, USA
+
+
+I'm at Taqueria El Farolito (San Francisco, CA) http://t.co/DyIugMqa4Q 2013-08-01 02:03:31 {u'type': u'Point', u'coordinates': [-122.41834491, 37.75245543]}
+Geocoding: -122.41834491, 37.75245543
+Results: 2783 Mission Street, San Francisco, CA 94110, USA
+
+
+I'm at 5A5 Steak Lounge (San Francisco, CA) http://t.co/iaGgdHsBK9 2013-08-01 02:03:06 {u'type': u'Point', u'coordinates': [-122.40023732, 37.79672927]}
+Geocoding: -122.40023732, 37.79672927
+Results: 570 Battery Street, San Francisco, CA 94111, USA
+
+
+I'm at Vista North - Golden Gateway Apts (San Francisco, CA) http://t.co/aZ10SUtyEw 2013-08-01 02:02:19 {u'type': u'Point', u'coordinates': [-122.39907663, 37.79684924]}
+Geocoding: -122.39907663, 37.79684924
+Results: 151 Jackson Street, San Francisco, CA 94109, USA
+
+
+San Francisco I'm here. Perfect weather, I'm in love. http://t.co/y1lrNddbqs 2013-08-01 02:02:02 {u'type': u'Point', u'coordinates': [-122.38582272, 37.61477177]}
+Geocoding: -122.38582272, 37.61477177
+Results: International Terminal Departures, San Francisco International Airport (SFO), San Francisco, CA 94128, USA
+
+
+#sanfrancisco @ San Francisco International Airport (SFO) http://t.co/BJ3WdGcBWh 2013-08-01 02:01:51 {u'type': u'Point', u'coordinates': [-122.38627911, 37.61642405]}
+Geocoding: -122.38627911, 37.61642405
+Results: International Terminal Departures, San Francisco International Airport (SFO), Millbrae, CA 94030, USA
+
+
+I'm at Universidad Francisco Gavidia - @ufgoficial (San Salvador) w/ 4 others http://t.co/tsdvgMTjrq 2013-08-01 02:01:20 {u'type': u'Point', u'coordinates': [-89.22003508, 13.69994031]}
+Geocoding: -89.22003508, 13.69994031
+Results: Pje Olimpico, San Salvador, El Salvador
+
+
+Live music in San Francisco tonight, 7/31/13 at the Elbo Room 2013-08-01 02:01:02 {u'type': u'Point', u'coordinates': [-122.41858598, 37.76414577]}
+Geocoding: -122.41858598, 37.76414577
+Results: 163 Capp Street, San Francisco, CA 94110, USA
+
+
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 13 others http://t.co/zTVtJenrt9 2013-08-01 02:00:41 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+Geocoding: -122.3894012, 37.77833859
+Results: San Francisco Bay Trail, San Francisco, CA 94158, USA
+
+
+Op weg terug naar San Francisco! Morgen vliegen naar NL. 2013-08-01 02:00:17 {u'type': u'Point', u'coordinates': [-119.64563629, 37.33740047]}
+Geocoding: -119.64563629, 37.33740047
+Results: 40650 California 41, Oakhurst, CA 93644, USA
+
+
+['RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm', datetime.datetime(2013, 8, 1, 2, 7, 37), None]
+MARCA TU CAMINO CON BYE!!
+CRA 25 # 15-50 SAN FRANCISCO
+TEL: 6321773 
+e-1 BEIGE X ROJO http://t.co/TCXQJp607D 2013-08-01 02:10:53 None
+Marketing Program Manager 2. San Francisco, CA. http://t.co/ucO2d61iZ0 #jobs 2013-08-01 02:10:51 None
+Everyone must visit San Francisco at least once in their life. Unbelievable. 2013-08-01 02:10:48 None
+My sister is moving to San Francisco 😢 2013-08-01 02:10:46 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/35lH6WwQqw 2013-08-01 02:10:33 None
+TOMORROW Dinner (Thursday 08/01 from 5PM-9PM) - 750 Stanyan St. San Francisco, CA 94117 [http://t.co/lE1Wo5eQfv]... http://t.co/EjFIrpPi3W 2013-08-01 02:10:30 None
+We love San Francisco &amp; all the social businesses in it.  One of our crew is having a great conversation, re: how this cafe uses social. 2013-08-01 02:10:28 None
+Schierholtz's HR in 9th lifts Cubs over Giants 1-0 - Schierholtz played with San Francisco from 2007-2012 before... http://t.co/otNtccy3Zm 2013-08-01 02:10:28 None
+I added a video to a @YouTube playlist http://t.co/TDbKfqJ0eM US 101 North (CA), Driving into San Francisco, San Mateo to SF 2013-08-01 02:10:25 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:10:18 None
+y el helado de brownie san francisco &lt;3 oh wn esa weá me excita 2013-08-01 02:10:14 None
+I miss San Francisco..I miss walking down streets, listening to people sing for money, or seeing people do all kinds of talents 2013-08-01 02:10:13 None
+RT @CupInfo: PHOTOS http://t.co/mfceoCuQVP by Chuck Lantz: of @ArtemisRacing &amp; @OracleTeamUSA at Sail-World | #LVCup #RBYAC #AmericasCup #A… 2013-08-01 02:10:03 None
+San Francisco is a nice city but I would never live here!! 1.Because I need my Dodgers 2.I need my beautiful LA weather and 3.I love LA 2013-08-01 02:09:56 None
+Estuvimos en la reinauguración del Hotel Posada San Francisco, van 10 habitaciones remodeladas, que sea por el bien de Tlaxcala. 2013-08-01 02:09:56 None
+vía @tonycittadinoVV: #MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:52 None
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 17 others http://t.co/t07yO67NCN 2013-08-01 02:09:51 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+@Mariannacep jaja y porque no se vienen ustedes para aca para san francisco? 2013-08-01 02:09:46 None
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:46 None
+RT @niravtolia: Job opportunity: Software Engineer at http://t.co/SobH0XJeV7 - San Francisco Bay Area #jobs http://t.co/HIConQCEgB 2013-08-01 02:09:45 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:09:42 None
+RT @technorati: Daytime sessions wrapped at #IMS13 with "Giving Your Fans a Voice." Check out a roundup of that and all the sessions. http:… 2013-08-01 02:09:41 None
+RT @7x7: Hurry! There are still amazing films to see at the 1st-ever San Francisco Japan Film Fest http://t.co/IVL8Loajod 2013-08-01 02:09:40 None
+San Francisco 49ers: 5 Storylines to Follow During Training Camp http://t.co/XtubYrETRl via @po_st #niners 2013-08-01 02:09:27 None
+#MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:09:26 None
+RT @EliecerPrieto: No queremos cárcel en San Francisco, queremos escuelas y buen asfaltado para la Urb. el Soler y sectores aledaños @gurdi… 2013-08-01 02:09:26 None
+I'm really waitin on da 2014 NBA season but until then my Football teams are Carolina Panthers &amp; San Francisco 49's 2013-08-01 02:09:18 None
+I favorited a @YouTube video from @simplepickup http://t.co/mf0JTwFC47 TWERKING IN SAN FRANCISCO PRANK 2013-08-01 02:09:18 None
+San Francisco #49ers: 5 Storylines to Follow During Training Camp http://t.co/jpqmz7Aaqn via @po_st 2013-08-01 02:09:10 None
+Gainesville to Orlando to Denver to San Francisco. Peace ำํ่ 2013-08-01 02:09:01 None
+#GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 11.00 WITA - Live di MNC TV. | Streaming http://t.co/wt624xwa3z 2013-08-01 02:08:56 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:08:54 None
+eso
+MAÑANA CHARLIE BROWN'S TRIBUTO A ARCTIC MONKEYS EN CAMPUS SAN FRANCISCO DE LA UCT 5.30 HRS. eso 2013-08-01 02:08:54 None
+RT @BobMetcalfe: Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLf… 2013-08-01 02:08:51 None
+For the #history #photography #architecture nerds... How to Find Photographs of a San Francisco Building: http://t.co/X9REpe7f1F #opengov 2013-08-01 02:08:43 None
+SOUL'D OUT VISION CONFERENCE! In the City by the Bay! San Francisco,Ca! Where there is no prophetic… http://t.co/ZK3DU5Lw3q 2013-08-01 02:08:36 None
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/9JWNc0gQUl 2013-08-01 02:08:32 None
+Richmond Threatens Eminent Domain To Address Foreclosure Crisis « CBS San Francisco http://t.co/wQ5fx62ccS 2013-08-01 02:08:32 None
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/umJk5qxUe7 2013-08-01 02:08:32 None
+RT @macanbola: Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:31 None
+Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:18 None
+I'm at Lightning Tavern (San Francisco, CA) w/ 3 others http://t.co/QHYzyYcrMk 2013-08-01 02:08:13 {u'type': u'Point', u'coordinates': [-122.43, 37.7976]}
+San Francisco Travel from USD 109 for 1 night(s) http://t.co/8cnha5NH45 See San Fran 2013-08-01 02:08:13 None
+San Francisco❤ http://t.co/Gv0V9HMUNu 2013-08-01 02:08:11 None
+Prosecutor: Kidnapped Ohio women kept diaries - WSHM-TV: San Francisco Chronicle... http://t.co/fDZL6L0sXF #TopStories #paedobritain 2013-08-01 02:08:09 None
+SAN FRANCISCO TOMORROW!! 2013-08-01 02:08:07 None
+@speksterrr let's go to San Francisco? ;) 2013-08-01 02:08:04 None
+WATCH: Seagulls Taking Over Major City http://t.co/sHgRqBHAx9 2013-08-01 02:08:03 None
+San Francisco Chronicle Prosecutor: Kidnapped Ohio women kept diaries WSHM-TV (AP Photo/Tony Dejak). Ariel Castro... http://t.co/YS6Q7N4MzX 2013-08-01 02:08:03 None
+Groupon features a daily deal on the best stuff to do, see, eat, and buy http://t.co/yzLFGlu8Kg 2013-08-01 02:08:03 None
+Steve F.'s Review of Zero Zero - San Francisco (5/5) on Yelp: This is one of our go-to restaurants in the area.... http://t.co/dlhEU9nerj 2013-08-01 02:08:03 None
+Back in San Francisco, where I belong💙 #homesweethome 2013-08-01 02:08:02 None
+#Phillies lost to the San Francisco Giants 9-2 on Wednesday night: http://t.co/fBm1XYSnhU 2013-08-01 02:07:56 None
+@GusMenFox  te lo pido de favor manda un saludo a san antonio de la huasteca potosina desde san francisco del rincón por favor 2013-08-01 02:07:49 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:07:37 None
+"@SpudJonesJr: Bitch asked wat state San Francisco in I cnt fuckin stand Sitel bruh" OOOOHHH MYYYY GAAAAWWWD LMMFAOOOOO 2013-08-01 02:07:32 None
+I'm at San Francisco Int'l Airport BART Station - @sfbart (San Francisco, CA) http://t.co/zblgZTJjaQ 2013-08-01 02:07:32 {u'type': u'Point', u'coordinates': [-122.39242673, 37.61593964]}
+I'm at San Francisco International Airport (SFO) (San Francisco, CA) w/ 123 others http://t.co/Pktwjjisod 2013-08-01 02:07:26 {u'type': u'Point', u'coordinates': [-122.38627911, 37.61642405]}
+유현목 감독의 영화 &lt;오발탄&gt;은 원판이 분실되었으며, 한국영상자료원이 샌프란시스코 국제영화제(San Francisco International Film Festival)에 출품되었던 프린트를 보유하고 있다. 2013-08-01 02:07:25 None
+@katherinemiller oh so you're using "san francisco" to be interchangeable with "the slightest modicum of class and taste" okay 2013-08-01 02:07:15 None
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:07:14 None
+Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLfKy 2013-08-01 02:07:13 None
+@da_candyboss LOL dude I had car sickness the whole time omg LOL oh and we went to my cousin's house at San Francisco 2013-08-01 02:07:09 None
+San francisco "@notesSAHABAT: #NowFollowNoters SanDiego or SanFrancisco ?" 2013-08-01 02:07:07 None
+Road tripping with @williekarpf - San Francisco or bust! 2013-08-01 02:07:07 None
+Hey Twitter friends, if I were in San Francisco the first week of September, who could I meet / stay with? 2013-08-01 02:07:04 None
+RT @jbinsingapore: “@Antitaurino: Cada criatura en desgracia tiene el mismo derecho a ser protegida". (San Francisco de Asís) http://t.co/0… 2013-08-01 02:07:01 None
+The San Francisco Giants actually won a game 😂😂 2013-08-01 02:06:52 None
+RT @patoisrecords: Reese Erlich Foreign Correspondent of  NPR's KALW in San Francisco just interview Wayne! Check it out!! http://t.co/hJMS… 2013-08-01 02:06:51 None
+Sigmund Stern Grove, 19th and Sloat, San Francisco, California
+
+This Sunday in SF ~ 
+Funk and soul icon,... http://t.co/NYNKTlYXww 2013-08-01 02:06:44 None
+I've been reggae and calypso. Won't you save me, San Francisco? #Train 2013-08-01 02:06:40 None
+First Northern loans, deposits, earnings rise http://t.co/iwnNBziXzW 2013-08-01 02:06:32 None
+Bos Juve Kunjungi San Francisco 49ers http://t.co/b0OhK7N98F 2013-08-01 02:06:32 None
+I'm at Taqueria El Farolito (San Francisco, CA) w/ 2 others http://t.co/EywihCHZfq 2013-08-01 02:06:31 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:06:20 None
+Marianne K.'s Review of Chapeau! - San Francisco (3/5) on Yelp: We went here for our anniversary since my husband... http://t.co/pd2NhxWOZ1 2013-08-01 02:06:17 None
+I'm at @Umi (San Francisco, CA) http://t.co/zTDCDk3HlZ 2013-08-01 02:06:15 {u'type': u'Point', u'coordinates': [-122.396107, 37.7626679]}
+Save Me San Francisco 🎤❤ http://t.co/y9upU8Junp 2013-08-01 02:06:13 None
+http://t.co/1Pgp46re4j Dallas is Online Now! in San Francisco 2013-08-01 02:06:10 None
+San Francisco just out San Francisco'd itself "@darrenrovell Giants plant garden behind centerfield for concessions http://t.co/aZvfbEI2y8" 2013-08-01 02:06:08 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:06:00 None
+Thank you @CharlesTrippy for reminding me to see the actual "Full House" House when I came to San Francisco! #ctfxc http://t.co/08QmJQ2owg 2013-08-01 02:05:54 None
+RT @AmazingWorldPic: Lombard Street, San Francisco http://t.co/qRPFS5fPQj 2013-08-01 02:05:54 None
+Phillies, Kyle Kendrick throttled by San Francisco Giants http://t.co/ix9lytXJmG 2013-08-01 02:05:53 None
+San Francisco Giants to plant the first-ever edible garden in a major American sports facility via @sfgate #SFGiants http://t.co/5gSh0KgZQt 2013-08-01 02:05:53 None
+Phillies, Kyle Kendrick throttled by San Francisco Giants: The right-hander didn't make it out of the third in... http://t.co/oXLVcPUMxX 2013-08-01 02:05:42 None
+@diegaTB Diegarcho, para cuando San Francisco (Córdoba) ? 2013-08-01 02:05:29 None
+RT @cobijones: Getting ready for the Juventus/Everton match up in San Francisco.  #ICC2013 http://t.co/Qg1sBVCSko 2013-08-01 02:05:25 {u'type': u'Point', u'coordinates': [54.6639777, 24.3682931]}
+This Saturday! Party the South American Style F8 Bar &amp; Lounge - San Francisco OPEN UNTIL 4AM Dj MGD (Peru) Facu... http://t.co/ghkEH0QJkg 2013-08-01 02:05:25 None
+@RaulOrvananos saludos para la huasteca potosina a san antonio desde san francisco del rincón oye pasa por favor mi saludo 2013-08-01 02:05:23 None
+RT @MLBScorebird: San Francisco 9, Philadelphia 2 | http://t.co/NSXjH0giLn | W: C. Gaudin (5-2) L: K. Kendrick (9-8) 2013-08-01 02:05:21 None
+Groupon's discounts are bigger than a dinosaur on a stepladder. Sign up here for their daily deals! #pd -  http://t.co/oixWL3mYny 2013-08-01 02:05:13 None
+RT @Untoldjay: @frankie2savage we meeting my San Francisco family in Vegas so everyone is together ^~^ 2013-08-01 02:05:13 None
+Party at Brad Cooks, 12 Mandalay South San Francisco. Hawaiian shirts required 2013-08-01 02:05:10 None
+es mejor que mañana me valla a san francisco. 2013-08-01 02:05:09 None
+...Area wrote on Sunday that backup catcher Hector Sanchez reported to camp without exactly...actually just as muc... http://t.co/6NIOmXTkBV 2013-08-01 02:05:05 None
+Michigan college president refers to 'dark ones' - San Francisco Chronicle http://t.co/uKJv7wqOZo 2013-08-01 02:05:02 None
+Buried treasure the Whip Locksmith Formality inward-bound San Francisco: .qXE 2013-08-01 02:05:02 None
+Reason why until exceptional relay crate up hang around close at hand San Francisco: .xJQ 2013-08-01 02:04:55 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:04:55 None
+MARCA TU CAMINO CON BYE!!
+CRA 25 # 15-50 SAN FRANCISCO
+TEL: 6321773 
+e-1 BEIGE X ROJO http://t.co/TCXQJp607D 2013-08-01 02:10:53 None
+Marketing Program Manager 2. San Francisco, CA. http://t.co/ucO2d61iZ0 #jobs 2013-08-01 02:10:51 None
+Everyone must visit San Francisco at least once in their life. Unbelievable. 2013-08-01 02:10:48 None
+My sister is moving to San Francisco 😢 2013-08-01 02:10:46 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/35lH6WwQqw 2013-08-01 02:10:33 None
+TOMORROW Dinner (Thursday 08/01 from 5PM-9PM) - 750 Stanyan St. San Francisco, CA 94117 [http://t.co/lE1Wo5eQfv]... http://t.co/EjFIrpPi3W 2013-08-01 02:10:30 None
+We love San Francisco &amp; all the social businesses in it.  One of our crew is having a great conversation, re: how this cafe uses social. 2013-08-01 02:10:28 None
+Schierholtz's HR in 9th lifts Cubs over Giants 1-0 - Schierholtz played with San Francisco from 2007-2012 before... http://t.co/otNtccy3Zm 2013-08-01 02:10:28 None
+I added a video to a @YouTube playlist http://t.co/TDbKfqJ0eM US 101 North (CA), Driving into San Francisco, San Mateo to SF 2013-08-01 02:10:25 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:10:18 None
+y el helado de brownie san francisco &lt;3 oh wn esa weá me excita 2013-08-01 02:10:14 None
+I miss San Francisco..I miss walking down streets, listening to people sing for money, or seeing people do all kinds of talents 2013-08-01 02:10:13 None
+RT @CupInfo: PHOTOS http://t.co/mfceoCuQVP by Chuck Lantz: of @ArtemisRacing &amp; @OracleTeamUSA at Sail-World | #LVCup #RBYAC #AmericasCup #A… 2013-08-01 02:10:03 None
+San Francisco is a nice city but I would never live here!! 1.Because I need my Dodgers 2.I need my beautiful LA weather and 3.I love LA 2013-08-01 02:09:56 None
+Estuvimos en la reinauguración del Hotel Posada San Francisco, van 10 habitaciones remodeladas, que sea por el bien de Tlaxcala. 2013-08-01 02:09:56 None
+vía @tonycittadinoVV: #MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:52 None
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 17 others http://t.co/t07yO67NCN 2013-08-01 02:09:51 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+@Mariannacep jaja y porque no se vienen ustedes para aca para san francisco? 2013-08-01 02:09:46 None
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:46 None
+RT @niravtolia: Job opportunity: Software Engineer at http://t.co/SobH0XJeV7 - San Francisco Bay Area #jobs http://t.co/HIConQCEgB 2013-08-01 02:09:45 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:09:42 None
+RT @technorati: Daytime sessions wrapped at #IMS13 with "Giving Your Fans a Voice." Check out a roundup of that and all the sessions. http:… 2013-08-01 02:09:41 None
+RT @7x7: Hurry! There are still amazing films to see at the 1st-ever San Francisco Japan Film Fest http://t.co/IVL8Loajod 2013-08-01 02:09:40 None
+San Francisco 49ers: 5 Storylines to Follow During Training Camp http://t.co/XtubYrETRl via @po_st #niners 2013-08-01 02:09:27 None
+#MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:09:26 None
+RT @EliecerPrieto: No queremos cárcel en San Francisco, queremos escuelas y buen asfaltado para la Urb. el Soler y sectores aledaños @gurdi… 2013-08-01 02:09:26 None
+I'm really waitin on da 2014 NBA season but until then my Football teams are Carolina Panthers &amp; San Francisco 49's 2013-08-01 02:09:18 None
+I favorited a @YouTube video from @simplepickup http://t.co/mf0JTwFC47 TWERKING IN SAN FRANCISCO PRANK 2013-08-01 02:09:18 None
+San Francisco #49ers: 5 Storylines to Follow During Training Camp http://t.co/jpqmz7Aaqn via @po_st 2013-08-01 02:09:10 None
+Gainesville to Orlando to Denver to San Francisco. Peace ำํ่ 2013-08-01 02:09:01 None
+#GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 11.00 WITA - Live di MNC TV. | Streaming http://t.co/wt624xwa3z 2013-08-01 02:08:56 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:08:54 None
+eso
+MAÑANA CHARLIE BROWN'S TRIBUTO A ARCTIC MONKEYS EN CAMPUS SAN FRANCISCO DE LA UCT 5.30 HRS. eso 2013-08-01 02:08:54 None
+RT @BobMetcalfe: Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLf… 2013-08-01 02:08:51 None
+For the #history #photography #architecture nerds... How to Find Photographs of a San Francisco Building: http://t.co/X9REpe7f1F #opengov 2013-08-01 02:08:43 None
+SOUL'D OUT VISION CONFERENCE! In the City by the Bay! San Francisco,Ca! Where there is no prophetic… http://t.co/ZK3DU5Lw3q 2013-08-01 02:08:36 None
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/9JWNc0gQUl 2013-08-01 02:08:32 None
+Richmond Threatens Eminent Domain To Address Foreclosure Crisis « CBS San Francisco http://t.co/wQ5fx62ccS 2013-08-01 02:08:32 None
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/umJk5qxUe7 2013-08-01 02:08:32 None
+RT @macanbola: Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:31 None
+Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:18 None
+I'm at Lightning Tavern (San Francisco, CA) w/ 3 others http://t.co/QHYzyYcrMk 2013-08-01 02:08:13 {u'type': u'Point', u'coordinates': [-122.43, 37.7976]}
+San Francisco Travel from USD 109 for 1 night(s) http://t.co/8cnha5NH45 See San Fran 2013-08-01 02:08:13 None
+San Francisco❤ http://t.co/Gv0V9HMUNu 2013-08-01 02:08:11 None
+Prosecutor: Kidnapped Ohio women kept diaries - WSHM-TV: San Francisco Chronicle... http://t.co/fDZL6L0sXF #TopStories #paedobritain 2013-08-01 02:08:09 None
+SAN FRANCISCO TOMORROW!! 2013-08-01 02:08:07 None
+@speksterrr let's go to San Francisco? ;) 2013-08-01 02:08:04 None
+WATCH: Seagulls Taking Over Major City http://t.co/sHgRqBHAx9 2013-08-01 02:08:03 None
+San Francisco Chronicle Prosecutor: Kidnapped Ohio women kept diaries WSHM-TV (AP Photo/Tony Dejak). Ariel Castro... http://t.co/YS6Q7N4MzX 2013-08-01 02:08:03 None
+Groupon features a daily deal on the best stuff to do, see, eat, and buy http://t.co/yzLFGlu8Kg 2013-08-01 02:08:03 None
+Steve F.'s Review of Zero Zero - San Francisco (5/5) on Yelp: This is one of our go-to restaurants in the area.... http://t.co/dlhEU9nerj 2013-08-01 02:08:03 None
+Back in San Francisco, where I belong💙 #homesweethome 2013-08-01 02:08:02 None
+#Phillies lost to the San Francisco Giants 9-2 on Wednesday night: http://t.co/fBm1XYSnhU 2013-08-01 02:07:56 None
+@GusMenFox  te lo pido de favor manda un saludo a san antonio de la huasteca potosina desde san francisco del rincón por favor 2013-08-01 02:07:49 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:07:37 None
+"@SpudJonesJr: Bitch asked wat state San Francisco in I cnt fuckin stand Sitel bruh" OOOOHHH MYYYY GAAAAWWWD LMMFAOOOOO 2013-08-01 02:07:32 None
+I'm at San Francisco Int'l Airport BART Station - @sfbart (San Francisco, CA) http://t.co/zblgZTJjaQ 2013-08-01 02:07:32 {u'type': u'Point', u'coordinates': [-122.39242673, 37.61593964]}
+I'm at San Francisco International Airport (SFO) (San Francisco, CA) w/ 123 others http://t.co/Pktwjjisod 2013-08-01 02:07:26 {u'type': u'Point', u'coordinates': [-122.38627911, 37.61642405]}
+유현목 감독의 영화 &lt;오발탄&gt;은 원판이 분실되었으며, 한국영상자료원이 샌프란시스코 국제영화제(San Francisco International Film Festival)에 출품되었던 프린트를 보유하고 있다. 2013-08-01 02:07:25 None
+@katherinemiller oh so you're using "san francisco" to be interchangeable with "the slightest modicum of class and taste" okay 2013-08-01 02:07:15 None
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:07:14 None
+Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLfKy 2013-08-01 02:07:13 None
+@da_candyboss LOL dude I had car sickness the whole time omg LOL oh and we went to my cousin's house at San Francisco 2013-08-01 02:07:09 None
+San francisco "@notesSAHABAT: #NowFollowNoters SanDiego or SanFrancisco ?" 2013-08-01 02:07:07 None
+Road tripping with @williekarpf - San Francisco or bust! 2013-08-01 02:07:07 None
+Hey Twitter friends, if I were in San Francisco the first week of September, who could I meet / stay with? 2013-08-01 02:07:04 None
+RT @jbinsingapore: “@Antitaurino: Cada criatura en desgracia tiene el mismo derecho a ser protegida". (San Francisco de Asís) http://t.co/0… 2013-08-01 02:07:01 None
+The San Francisco Giants actually won a game 😂😂 2013-08-01 02:06:52 None
+RT @patoisrecords: Reese Erlich Foreign Correspondent of  NPR's KALW in San Francisco just interview Wayne! Check it out!! http://t.co/hJMS… 2013-08-01 02:06:51 None
+Sigmund Stern Grove, 19th and Sloat, San Francisco, California
+
+This Sunday in SF ~ 
+Funk and soul icon,... http://t.co/NYNKTlYXww 2013-08-01 02:06:44 None
+I've been reggae and calypso. Won't you save me, San Francisco? #Train 2013-08-01 02:06:40 None
+First Northern loans, deposits, earnings rise http://t.co/iwnNBziXzW 2013-08-01 02:06:32 None
+Bos Juve Kunjungi San Francisco 49ers http://t.co/b0OhK7N98F 2013-08-01 02:06:32 None
+I'm at Taqueria El Farolito (San Francisco, CA) w/ 2 others http://t.co/EywihCHZfq 2013-08-01 02:06:31 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:06:20 None
+Marianne K.'s Review of Chapeau! - San Francisco (3/5) on Yelp: We went here for our anniversary since my husband... http://t.co/pd2NhxWOZ1 2013-08-01 02:06:17 None
+I'm at @Umi (San Francisco, CA) http://t.co/zTDCDk3HlZ 2013-08-01 02:06:15 {u'type': u'Point', u'coordinates': [-122.396107, 37.7626679]}
+Save Me San Francisco 🎤❤ http://t.co/y9upU8Junp 2013-08-01 02:06:13 None
+http://t.co/1Pgp46re4j Dallas is Online Now! in San Francisco 2013-08-01 02:06:10 None
+San Francisco just out San Francisco'd itself "@darrenrovell Giants plant garden behind centerfield for concessions http://t.co/aZvfbEI2y8" 2013-08-01 02:06:08 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:06:00 None
+Thank you @CharlesTrippy for reminding me to see the actual "Full House" House when I came to San Francisco! #ctfxc http://t.co/08QmJQ2owg 2013-08-01 02:05:54 None
+RT @AmazingWorldPic: Lombard Street, San Francisco http://t.co/qRPFS5fPQj 2013-08-01 02:05:54 None
+Phillies, Kyle Kendrick throttled by San Francisco Giants http://t.co/ix9lytXJmG 2013-08-01 02:05:53 None
+San Francisco Giants to plant the first-ever edible garden in a major American sports facility via @sfgate #SFGiants http://t.co/5gSh0KgZQt 2013-08-01 02:05:53 None
+Phillies, Kyle Kendrick throttled by San Francisco Giants: The right-hander didn't make it out of the third in... http://t.co/oXLVcPUMxX 2013-08-01 02:05:42 None
+@diegaTB Diegarcho, para cuando San Francisco (Córdoba) ? 2013-08-01 02:05:29 None
+RT @cobijones: Getting ready for the Juventus/Everton match up in San Francisco.  #ICC2013 http://t.co/Qg1sBVCSko 2013-08-01 02:05:25 {u'type': u'Point', u'coordinates': [54.6639777, 24.3682931]}
+This Saturday! Party the South American Style F8 Bar &amp; Lounge - San Francisco OPEN UNTIL 4AM Dj MGD (Peru) Facu... http://t.co/ghkEH0QJkg 2013-08-01 02:05:25 None
+@RaulOrvananos saludos para la huasteca potosina a san antonio desde san francisco del rincón oye pasa por favor mi saludo 2013-08-01 02:05:23 None
+RT @MLBScorebird: San Francisco 9, Philadelphia 2 | http://t.co/NSXjH0giLn | W: C. Gaudin (5-2) L: K. Kendrick (9-8) 2013-08-01 02:05:21 None
+Groupon's discounts are bigger than a dinosaur on a stepladder. Sign up here for their daily deals! #pd -  http://t.co/oixWL3mYny 2013-08-01 02:05:13 None
+RT @Untoldjay: @frankie2savage we meeting my San Francisco family in Vegas so everyone is together ^~^ 2013-08-01 02:05:13 None
+Party at Brad Cooks, 12 Mandalay South San Francisco. Hawaiian shirts required 2013-08-01 02:05:10 None
+es mejor que mañana me valla a san francisco. 2013-08-01 02:05:09 None
+...Area wrote on Sunday that backup catcher Hector Sanchez reported to camp without exactly...actually just as muc... http://t.co/6NIOmXTkBV 2013-08-01 02:05:05 None
+Michigan college president refers to 'dark ones' - San Francisco Chronicle http://t.co/uKJv7wqOZo 2013-08-01 02:05:02 None
+Buried treasure the Whip Locksmith Formality inward-bound San Francisco: .qXE 2013-08-01 02:05:02 None
+Reason why until exceptional relay crate up hang around close at hand San Francisco: .xJQ 2013-08-01 02:04:55 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:04:55 None
+Macanbola: Bos Juve Kunjungi San Francisco 49ers http://t.co/3nxO81Qd6A #UpdateJuve 2013-08-01 02:11:04 None
+MARCA TU CAMINO CON BYE!!
+CRA 25 # 15-50 SAN FRANCISCO
+TEL: 6321773 
+e-1 BEIGE X ROJO http://t.co/TCXQJp607D 2013-08-01 02:10:53 None
+Marketing Program Manager 2. San Francisco, CA. http://t.co/ucO2d61iZ0 #jobs 2013-08-01 02:10:51 None
+Everyone must visit San Francisco at least once in their life. Unbelievable. 2013-08-01 02:10:48 None
+My sister is moving to San Francisco 😢 2013-08-01 02:10:46 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/35lH6WwQqw 2013-08-01 02:10:33 None
+TOMORROW Dinner (Thursday 08/01 from 5PM-9PM) - 750 Stanyan St. San Francisco, CA 94117 [http://t.co/lE1Wo5eQfv]... http://t.co/EjFIrpPi3W 2013-08-01 02:10:30 None
+We love San Francisco &amp; all the social businesses in it.  One of our crew is having a great conversation, re: how this cafe uses social. 2013-08-01 02:10:28 None
+Schierholtz's HR in 9th lifts Cubs over Giants 1-0 - Schierholtz played with San Francisco from 2007-2012 before... http://t.co/otNtccy3Zm 2013-08-01 02:10:28 None
+I added a video to a @YouTube playlist http://t.co/TDbKfqJ0eM US 101 North (CA), Driving into San Francisco, San Mateo to SF 2013-08-01 02:10:25 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:10:18 None
+y el helado de brownie san francisco &lt;3 oh wn esa weá me excita 2013-08-01 02:10:14 None
+I miss San Francisco..I miss walking down streets, listening to people sing for money, or seeing people do all kinds of talents 2013-08-01 02:10:13 None
+RT @CupInfo: PHOTOS http://t.co/mfceoCuQVP by Chuck Lantz: of @ArtemisRacing &amp; @OracleTeamUSA at Sail-World | #LVCup #RBYAC #AmericasCup #A… 2013-08-01 02:10:03 None
+San Francisco is a nice city but I would never live here!! 1.Because I need my Dodgers 2.I need my beautiful LA weather and 3.I love LA 2013-08-01 02:09:56 None
+Estuvimos en la reinauguración del Hotel Posada San Francisco, van 10 habitaciones remodeladas, que sea por el bien de Tlaxcala. 2013-08-01 02:09:56 None
+vía @tonycittadinoVV: #MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:52 None
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 17 others http://t.co/t07yO67NCN 2013-08-01 02:09:51 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+@Mariannacep jaja y porque no se vienen ustedes para aca para san francisco? 2013-08-01 02:09:46 None
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:46 None
+RT @niravtolia: Job opportunity: Software Engineer at http://t.co/SobH0XJeV7 - San Francisco Bay Area #jobs http://t.co/HIConQCEgB 2013-08-01 02:09:45 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:09:42 None
+RT @technorati: Daytime sessions wrapped at #IMS13 with "Giving Your Fans a Voice." Check out a roundup of that and all the sessions. http:… 2013-08-01 02:09:41 None
+RT @7x7: Hurry! There are still amazing films to see at the 1st-ever San Francisco Japan Film Fest http://t.co/IVL8Loajod 2013-08-01 02:09:40 None
+San Francisco 49ers: 5 Storylines to Follow During Training Camp http://t.co/XtubYrETRl via @po_st #niners 2013-08-01 02:09:27 None
+#MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:09:26 None
+RT @EliecerPrieto: No queremos cárcel en San Francisco, queremos escuelas y buen asfaltado para la Urb. el Soler y sectores aledaños @gurdi… 2013-08-01 02:09:26 None
+I'm really waitin on da 2014 NBA season but until then my Football teams are Carolina Panthers &amp; San Francisco 49's 2013-08-01 02:09:18 None
+I favorited a @YouTube video from @simplepickup http://t.co/mf0JTwFC47 TWERKING IN SAN FRANCISCO PRANK 2013-08-01 02:09:18 None
+San Francisco #49ers: 5 Storylines to Follow During Training Camp http://t.co/jpqmz7Aaqn via @po_st 2013-08-01 02:09:10 None
+Gainesville to Orlando to Denver to San Francisco. Peace ำํ่ 2013-08-01 02:09:01 None
+#GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 11.00 WITA - Live di MNC TV. | Streaming http://t.co/wt624xwa3z 2013-08-01 02:08:56 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:08:54 None
+eso
+MAÑANA CHARLIE BROWN'S TRIBUTO A ARCTIC MONKEYS EN CAMPUS SAN FRANCISCO DE LA UCT 5.30 HRS. eso 2013-08-01 02:08:54 None
+RT @BobMetcalfe: Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLf… 2013-08-01 02:08:51 None
+For the #history #photography #architecture nerds... How to Find Photographs of a San Francisco Building: http://t.co/X9REpe7f1F #opengov 2013-08-01 02:08:43 None
+SOUL'D OUT VISION CONFERENCE! In the City by the Bay! San Francisco,Ca! Where there is no prophetic… http://t.co/ZK3DU5Lw3q 2013-08-01 02:08:36 None
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/9JWNc0gQUl 2013-08-01 02:08:32 None
+Richmond Threatens Eminent Domain To Address Foreclosure Crisis « CBS San Francisco http://t.co/wQ5fx62ccS 2013-08-01 02:08:32 None
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/umJk5qxUe7 2013-08-01 02:08:32 None
+RT @macanbola: Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:31 None
+Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:18 None
+I'm at Lightning Tavern (San Francisco, CA) w/ 3 others http://t.co/QHYzyYcrMk 2013-08-01 02:08:13 {u'type': u'Point', u'coordinates': [-122.43, 37.7976]}
+San Francisco Travel from USD 109 for 1 night(s) http://t.co/8cnha5NH45 See San Fran 2013-08-01 02:08:13 None
+San Francisco❤ http://t.co/Gv0V9HMUNu 2013-08-01 02:08:11 None
+Prosecutor: Kidnapped Ohio women kept diaries - WSHM-TV: San Francisco Chronicle... http://t.co/fDZL6L0sXF #TopStories #paedobritain 2013-08-01 02:08:09 None
+SAN FRANCISCO TOMORROW!! 2013-08-01 02:08:07 None
+@speksterrr let's go to San Francisco? ;) 2013-08-01 02:08:04 None
+WATCH: Seagulls Taking Over Major City http://t.co/sHgRqBHAx9 2013-08-01 02:08:03 None
+San Francisco Chronicle Prosecutor: Kidnapped Ohio women kept diaries WSHM-TV (AP Photo/Tony Dejak). Ariel Castro... http://t.co/YS6Q7N4MzX 2013-08-01 02:08:03 None
+Groupon features a daily deal on the best stuff to do, see, eat, and buy http://t.co/yzLFGlu8Kg 2013-08-01 02:08:03 None
+Steve F.'s Review of Zero Zero - San Francisco (5/5) on Yelp: This is one of our go-to restaurants in the area.... http://t.co/dlhEU9nerj 2013-08-01 02:08:03 None
+Back in San Francisco, where I belong💙 #homesweethome 2013-08-01 02:08:02 None
+#Phillies lost to the San Francisco Giants 9-2 on Wednesday night: http://t.co/fBm1XYSnhU 2013-08-01 02:07:56 None
+@GusMenFox  te lo pido de favor manda un saludo a san antonio de la huasteca potosina desde san francisco del rincón por favor 2013-08-01 02:07:49 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:07:37 None
+"@SpudJonesJr: Bitch asked wat state San Francisco in I cnt fuckin stand Sitel bruh" OOOOHHH MYYYY GAAAAWWWD LMMFAOOOOO 2013-08-01 02:07:32 None
+I'm at San Francisco Int'l Airport BART Station - @sfbart (San Francisco, CA) http://t.co/zblgZTJjaQ 2013-08-01 02:07:32 {u'type': u'Point', u'coordinates': [-122.39242673, 37.61593964]}
+I'm at San Francisco International Airport (SFO) (San Francisco, CA) w/ 123 others http://t.co/Pktwjjisod 2013-08-01 02:07:26 {u'type': u'Point', u'coordinates': [-122.38627911, 37.61642405]}
+유현목 감독의 영화 &lt;오발탄&gt;은 원판이 분실되었으며, 한국영상자료원이 샌프란시스코 국제영화제(San Francisco International Film Festival)에 출품되었던 프린트를 보유하고 있다. 2013-08-01 02:07:25 None
+@katherinemiller oh so you're using "san francisco" to be interchangeable with "the slightest modicum of class and taste" okay 2013-08-01 02:07:15 None
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:07:14 None
+Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLfKy 2013-08-01 02:07:13 None
+@da_candyboss LOL dude I had car sickness the whole time omg LOL oh and we went to my cousin's house at San Francisco 2013-08-01 02:07:09 None
+San francisco "@notesSAHABAT: #NowFollowNoters SanDiego or SanFrancisco ?" 2013-08-01 02:07:07 None
+Road tripping with @williekarpf - San Francisco or bust! 2013-08-01 02:07:07 None
+Hey Twitter friends, if I were in San Francisco the first week of September, who could I meet / stay with? 2013-08-01 02:07:04 None
+RT @jbinsingapore: “@Antitaurino: Cada criatura en desgracia tiene el mismo derecho a ser protegida". (San Francisco de Asís) http://t.co/0… 2013-08-01 02:07:01 None
+The San Francisco Giants actually won a game 😂😂 2013-08-01 02:06:52 None
+RT @patoisrecords: Reese Erlich Foreign Correspondent of  NPR's KALW in San Francisco just interview Wayne! Check it out!! http://t.co/hJMS… 2013-08-01 02:06:51 None
+Sigmund Stern Grove, 19th and Sloat, San Francisco, California
+
+This Sunday in SF ~ 
+Funk and soul icon,... http://t.co/NYNKTlYXww 2013-08-01 02:06:44 None
+I've been reggae and calypso. Won't you save me, San Francisco? #Train 2013-08-01 02:06:40 None
+First Northern loans, deposits, earnings rise http://t.co/iwnNBziXzW 2013-08-01 02:06:32 None
+Bos Juve Kunjungi San Francisco 49ers http://t.co/b0OhK7N98F 2013-08-01 02:06:32 None
+I'm at Taqueria El Farolito (San Francisco, CA) w/ 2 others http://t.co/EywihCHZfq 2013-08-01 02:06:31 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:06:20 None
+Marianne K.'s Review of Chapeau! - San Francisco (3/5) on Yelp: We went here for our anniversary since my husband... http://t.co/pd2NhxWOZ1 2013-08-01 02:06:17 None
+I'm at @Umi (San Francisco, CA) http://t.co/zTDCDk3HlZ 2013-08-01 02:06:15 {u'type': u'Point', u'coordinates': [-122.396107, 37.7626679]}
+Save Me San Francisco 🎤❤ http://t.co/y9upU8Junp 2013-08-01 02:06:13 None
+http://t.co/1Pgp46re4j Dallas is Online Now! in San Francisco 2013-08-01 02:06:10 None
+San Francisco just out San Francisco'd itself "@darrenrovell Giants plant garden behind centerfield for concessions http://t.co/aZvfbEI2y8" 2013-08-01 02:06:08 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:06:00 None
+Thank you @CharlesTrippy for reminding me to see the actual "Full House" House when I came to San Francisco! #ctfxc http://t.co/08QmJQ2owg 2013-08-01 02:05:54 None
+RT @AmazingWorldPic: Lombard Street, San Francisco http://t.co/qRPFS5fPQj 2013-08-01 02:05:54 None
+Phillies, Kyle Kendrick throttled by San Francisco Giants http://t.co/ix9lytXJmG 2013-08-01 02:05:53 None
+San Francisco Giants to plant the first-ever edible garden in a major American sports facility via @sfgate #SFGiants http://t.co/5gSh0KgZQt 2013-08-01 02:05:53 None
+Phillies, Kyle Kendrick throttled by San Francisco Giants: The right-hander didn't make it out of the third in... http://t.co/oXLVcPUMxX 2013-08-01 02:05:42 None
+@diegaTB Diegarcho, para cuando San Francisco (Córdoba) ? 2013-08-01 02:05:29 None
+RT @cobijones: Getting ready for the Juventus/Everton match up in San Francisco.  #ICC2013 http://t.co/Qg1sBVCSko 2013-08-01 02:05:25 {u'type': u'Point', u'coordinates': [54.6639777, 24.3682931]}
+This Saturday! Party the South American Style F8 Bar &amp; Lounge - San Francisco OPEN UNTIL 4AM Dj MGD (Peru) Facu... http://t.co/ghkEH0QJkg 2013-08-01 02:05:25 None
+@RaulOrvananos saludos para la huasteca potosina a san antonio desde san francisco del rincón oye pasa por favor mi saludo 2013-08-01 02:05:23 None
+RT @MLBScorebird: San Francisco 9, Philadelphia 2 | http://t.co/NSXjH0giLn | W: C. Gaudin (5-2) L: K. Kendrick (9-8) 2013-08-01 02:05:21 None
+Groupon's discounts are bigger than a dinosaur on a stepladder. Sign up here for their daily deals! #pd -  http://t.co/oixWL3mYny 2013-08-01 02:05:13 None
+RT @Untoldjay: @frankie2savage we meeting my San Francisco family in Vegas so everyone is together ^~^ 2013-08-01 02:05:13 None
+Party at Brad Cooks, 12 Mandalay South San Francisco. Hawaiian shirts required 2013-08-01 02:05:10 None
+es mejor que mañana me valla a san francisco. 2013-08-01 02:05:09 None
+...Area wrote on Sunday that backup catcher Hector Sanchez reported to camp without exactly...actually just as muc... http://t.co/6NIOmXTkBV 2013-08-01 02:05:05 None
+Michigan college president refers to 'dark ones' - San Francisco Chronicle http://t.co/uKJv7wqOZo 2013-08-01 02:05:02 None
+Buried treasure the Whip Locksmith Formality inward-bound San Francisco: .qXE 2013-08-01 02:05:02 None
+Reason why until exceptional relay crate up hang around close at hand San Francisco: .xJQ 2013-08-01 02:04:55 None
+I'm at Kiji Sushi Bar &amp; Cuisine (San Francisco, CA) http://t.co/UZV8UhwfWS 2013-08-01 02:12:30 {u'type': u'Point', u'coordinates': [-122.42314765, 37.75488348]}
+Any suggestions for hotels, places to see, and places to eat in San Francisco? Hubby and I are headed there Sept-Oct time frame :) 2013-08-01 02:12:28 None
+Look what I found on @eBay! http://t.co/B0jemM720R 2013-08-01 02:12:23 None
+would have failed
+@hcapriles Padre josé Palmar de San Francisco Maracaibo decidió identificar su camioneta https://t.co/xVCOpXcMAS 2013-08-01 02:12:22 None
+#RileggiNT: In giro per San Francisco http://t.co/S4sDz6blL9 2013-08-01 02:12:21 None
+Un rayo golpeo mi auto y me llevo a san francisco en 1965 2013-08-01 02:12:18 None
+Just reported a jam on Avenida Francisco Gavidia, San Salvador. My mood: speedy, http://t.co/Q9jTAmCGha using @waze - Social GPS. 2013-08-01 02:12:13 None
+@KeatonStromberg I wish I was there. Poopy head. Come to San Francisco! 2013-08-01 02:12:13 None
+@RaulOrvananos amigo manda un saludo para la familia montes gomez de san francisco del rincon guanajuato 2013-08-01 02:12:09 {u'type': u'Point', u'coordinates': [-101.85111465, 21.01857181]}
+Look what I found on @eBay! http://t.co/HQM08R7LOl 2013-08-01 02:12:05 None
+Francisco R.'s Review of The Wild Donkey Cafe - San Luis Obispo (1/5) on Yelp: Service and food were disappointing. http://t.co/QDWhtZPib8 2013-08-01 02:12:04 None
+IF YOU'RE GOING TO SAN FRANCISCO, BE SURE TO WEAR SOME FLOWERS IN YOUR HAIR. 2013-08-01 02:12:04 None
+RT @BrianWilson38: Thank you to the fans in San Francisco.  It was an honor to pitch in front of you for all those years.... 2013-08-01 02:12:03 None
+would have failed
+RT @nat_janes: "You got to get the gold while it's still in San Francisco." Thank you @BriaZyniewicz for the dating advice. #JustALittlePie… 2013-08-01 02:12:01 None
+would have failed
+RT @ho_fernandez: Estamos en turno d recolección nocturna en Ancón, Barriadas de Tocúmen,San Francisco,SantaAna,Calidonia,Hatillo,Marañón,P… 2013-08-01 02:12:00 None
+would have failed
+Qué lindo volver a relatar!!! El domingo desde  San Francisco (Cba) Sportivo Belgrano vs #IndependienteRivadavia para Radio Noticias 102.5 2013-08-01 02:11:58 None
+Now #Hiring: Account Manager, Technology (Client Rel Rep) at Kforce Inc. in San Francisco, CA. http://t.co/i50ExTh626 #needajob 2013-08-01 02:11:39 None
+I'm owning a pug when I move to San Francisco. 2013-08-01 02:11:37 None
+I must go to San Francisco before the end of summer 2013-08-01 02:11:34 None
+1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series ATTA BABE http://t.co/Ii9T4XegIN 2013-08-01 02:11:33 None
+Fnaire - Bajhwa MaLhom - Marrakech to San Francisco  http://t.co/prGR9gKniX 2013-08-01 02:11:32 None
+RT @cuantoacuanto: #MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:11:31 None
+Found a place to live and finally booked my plane ticket. See you in two weeks San Francisco. #Immabigkidnow 2013-08-01 02:11:29 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/orMxeRmGVI 2013-08-01 02:11:26 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:11:16 None
+What I would do to be in that bar in San Francisco now 2013-08-01 02:11:16 None
+Save Me, San Francisco - http://t.co/6czfavisXP  - Rocking wines with Grammy winners, "Train" 2013-08-01 02:11:12 None
+@sovadelsov SAN FRANCISCO BABYYYY &lt;3 2013-08-01 02:11:11 None
+Risky sign to have in San Francisco #enteratrear http://t.co/p3vF6HvGev 2013-08-01 02:11:10 None
+Macanbola: Bos Juve Kunjungi San Francisco 49ers http://t.co/3nxO81Qd6A #UpdateJuve 2013-08-01 02:11:04 None
+MARCA TU CAMINO CON BYE!!
+CRA 25 # 15-50 SAN FRANCISCO
+TEL: 6321773 
+e-1 BEIGE X ROJO http://t.co/TCXQJp607D 2013-08-01 02:10:53 None
+Marketing Program Manager 2. San Francisco, CA. http://t.co/ucO2d61iZ0 #jobs 2013-08-01 02:10:51 None
+Everyone must visit San Francisco at least once in their life. Unbelievable. 2013-08-01 02:10:48 None
+would have failed
+My sister is moving to San Francisco 😢 2013-08-01 02:10:46 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/35lH6WwQqw 2013-08-01 02:10:33 None
+TOMORROW Dinner (Thursday 08/01 from 5PM-9PM) - 750 Stanyan St. San Francisco, CA 94117 [http://t.co/lE1Wo5eQfv]... http://t.co/EjFIrpPi3W 2013-08-01 02:10:30 None
+We love San Francisco &amp; all the social businesses in it.  One of our crew is having a great conversation, re: how this cafe uses social. 2013-08-01 02:10:28 None
+Schierholtz's HR in 9th lifts Cubs over Giants 1-0 - Schierholtz played with San Francisco from 2007-2012 before... http://t.co/otNtccy3Zm 2013-08-01 02:10:28 None
+I added a video to a @YouTube playlist http://t.co/TDbKfqJ0eM US 101 North (CA), Driving into San Francisco, San Mateo to SF 2013-08-01 02:10:25 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:10:18 None
+would have failed
+y el helado de brownie san francisco &lt;3 oh wn esa weá me excita 2013-08-01 02:10:14 None
+I miss San Francisco..I miss walking down streets, listening to people sing for money, or seeing people do all kinds of talents 2013-08-01 02:10:13 None
+would have failed
+RT @CupInfo: PHOTOS http://t.co/mfceoCuQVP by Chuck Lantz: of @ArtemisRacing &amp; @OracleTeamUSA at Sail-World | #LVCup #RBYAC #AmericasCup #A… 2013-08-01 02:10:03 None
+San Francisco is a nice city but I would never live here!! 1.Because I need my Dodgers 2.I need my beautiful LA weather and 3.I love LA 2013-08-01 02:09:56 None
+would have failed
+Estuvimos en la reinauguración del Hotel Posada San Francisco, van 10 habitaciones remodeladas, que sea por el bien de Tlaxcala. 2013-08-01 02:09:56 None
+would have failed
+vía @tonycittadinoVV: #MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:52 None
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 17 others http://t.co/t07yO67NCN 2013-08-01 02:09:51 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+@Mariannacep jaja y porque no se vienen ustedes para aca para san francisco? 2013-08-01 02:09:46 None
+would have failed
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:46 None
+RT @niravtolia: Job opportunity: Software Engineer at http://t.co/SobH0XJeV7 - San Francisco Bay Area #jobs http://t.co/HIConQCEgB 2013-08-01 02:09:45 None
+would have failed
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:09:42 None
+would have failed
+RT @technorati: Daytime sessions wrapped at #IMS13 with "Giving Your Fans a Voice." Check out a roundup of that and all the sessions. http:… 2013-08-01 02:09:41 None
+RT @7x7: Hurry! There are still amazing films to see at the 1st-ever San Francisco Japan Film Fest http://t.co/IVL8Loajod 2013-08-01 02:09:40 None
+San Francisco 49ers: 5 Storylines to Follow During Training Camp http://t.co/XtubYrETRl via @po_st #niners 2013-08-01 02:09:27 None
+#MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:09:26 None
+would have failed
+RT @EliecerPrieto: No queremos cárcel en San Francisco, queremos escuelas y buen asfaltado para la Urb. el Soler y sectores aledaños @gurdi… 2013-08-01 02:09:26 None
+I'm really waitin on da 2014 NBA season but until then my Football teams are Carolina Panthers &amp; San Francisco 49's 2013-08-01 02:09:18 None
+I favorited a @YouTube video from @simplepickup http://t.co/mf0JTwFC47 TWERKING IN SAN FRANCISCO PRANK 2013-08-01 02:09:18 None
+San Francisco #49ers: 5 Storylines to Follow During Training Camp http://t.co/jpqmz7Aaqn via @po_st 2013-08-01 02:09:10 None
+would have failed
+Gainesville to Orlando to Denver to San Francisco. Peace ำํ่ 2013-08-01 02:09:01 None
+#GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 11.00 WITA - Live di MNC TV. | Streaming http://t.co/wt624xwa3z 2013-08-01 02:08:56 None
+would have failed
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:08:54 None
+would have failed
+eso
+MAÑANA CHARLIE BROWN'S TRIBUTO A ARCTIC MONKEYS EN CAMPUS SAN FRANCISCO DE LA UCT 5.30 HRS. eso 2013-08-01 02:08:54 None
+would have failed
+RT @BobMetcalfe: Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLf… 2013-08-01 02:08:51 None
+For the #history #photography #architecture nerds... How to Find Photographs of a San Francisco Building: http://t.co/X9REpe7f1F #opengov 2013-08-01 02:08:43 None
+would have failed
+SOUL'D OUT VISION CONFERENCE! In the City by the Bay! San Francisco,Ca! Where there is no prophetic… http://t.co/ZK3DU5Lw3q 2013-08-01 02:08:36 None
+would have failed
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/9JWNc0gQUl 2013-08-01 02:08:32 None
+would have failed
+Richmond Threatens Eminent Domain To Address Foreclosure Crisis « CBS San Francisco http://t.co/wQ5fx62ccS 2013-08-01 02:08:32 None
+would have failed
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/umJk5qxUe7 2013-08-01 02:08:32 None
+RT @macanbola: Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:31 None
+Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:18 None
+I'm at Lightning Tavern (San Francisco, CA) w/ 3 others http://t.co/QHYzyYcrMk 2013-08-01 02:08:13 {u'type': u'Point', u'coordinates': [-122.43, 37.7976]}
+San Francisco Travel from USD 109 for 1 night(s) http://t.co/8cnha5NH45 See San Fran 2013-08-01 02:08:13 None
+would have failed
+San Francisco❤ http://t.co/Gv0V9HMUNu 2013-08-01 02:08:11 None
+Prosecutor: Kidnapped Ohio women kept diaries - WSHM-TV: San Francisco Chronicle... http://t.co/fDZL6L0sXF #TopStories #paedobritain 2013-08-01 02:08:09 None
+SAN FRANCISCO TOMORROW!! 2013-08-01 02:08:07 None
+@speksterrr let's go to San Francisco? ;) 2013-08-01 02:08:04 None
+WATCH: Seagulls Taking Over Major City http://t.co/sHgRqBHAx9 2013-08-01 02:08:03 None
+San Francisco Chronicle Prosecutor: Kidnapped Ohio women kept diaries WSHM-TV (AP Photo/Tony Dejak). Ariel Castro... http://t.co/YS6Q7N4MzX 2013-08-01 02:08:03 None
+Groupon features a daily deal on the best stuff to do, see, eat, and buy http://t.co/yzLFGlu8Kg 2013-08-01 02:08:03 None
+Steve F.'s Review of Zero Zero - San Francisco (5/5) on Yelp: This is one of our go-to restaurants in the area.... http://t.co/dlhEU9nerj 2013-08-01 02:08:03 None
+would have failed
+Back in San Francisco, where I belong💙 #homesweethome 2013-08-01 02:08:02 None
+#Phillies lost to the San Francisco Giants 9-2 on Wednesday night: http://t.co/fBm1XYSnhU 2013-08-01 02:07:56 None
+would have failed
+@GusMenFox  te lo pido de favor manda un saludo a san antonio de la huasteca potosina desde san francisco del rincón por favor 2013-08-01 02:07:49 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:07:37 None
+"@SpudJonesJr: Bitch asked wat state San Francisco in I cnt fuckin stand Sitel bruh" OOOOHHH MYYYY GAAAAWWWD LMMFAOOOOO 2013-08-01 02:07:32 None
+I'm at San Francisco Int'l Airport BART Station - @sfbart (San Francisco, CA) http://t.co/zblgZTJjaQ 2013-08-01 02:07:32 {u'type': u'Point', u'coordinates': [-122.39242673, 37.61593964]}
+I'm at San Francisco International Airport (SFO) (San Francisco, CA) w/ 123 others http://t.co/Pktwjjisod 2013-08-01 02:07:26 {u'type': u'Point', u'coordinates': [-122.38627911, 37.61642405]}
+would have failed
+유현목 감독의 영화 &lt;오발탄&gt;은 원판이 분실되었으며, 한국영상자료원이 샌프란시스코 국제영화제(San Francisco International Film Festival)에 출품되었던 프린트를 보유하고 있다. 2013-08-01 02:07:25 None
+@katherinemiller oh so you're using "san francisco" to be interchangeable with "the slightest modicum of class and taste" okay 2013-08-01 02:07:15 None
+would have failed
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:07:14 None
+Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLfKy 2013-08-01 02:07:13 None
+@da_candyboss LOL dude I had car sickness the whole time omg LOL oh and we went to my cousin's house at San Francisco 2013-08-01 02:07:09 None
+San francisco "@notesSAHABAT: #NowFollowNoters SanDiego or SanFrancisco ?" 2013-08-01 02:07:07 None
+Road tripping with @williekarpf - San Francisco or bust! 2013-08-01 02:07:07 None
+Hey Twitter friends, if I were in San Francisco the first week of September, who could I meet / stay with? 2013-08-01 02:07:04 None
+would have failed
+RT @jbinsingapore: “@Antitaurino: Cada criatura en desgracia tiene el mismo derecho a ser protegida". (San Francisco de Asís) http://t.co/0… 2013-08-01 02:07:01 None
+would have failed
+The San Francisco Giants actually won a game 😂😂 2013-08-01 02:06:52 None
+would have failed
+RT @patoisrecords: Reese Erlich Foreign Correspondent of  NPR's KALW in San Francisco just interview Wayne! Check it out!! http://t.co/hJMS… 2013-08-01 02:06:51 None
+Sigmund Stern Grove, 19th and Sloat, San Francisco, California
+
+This Sunday in SF ~ 
+Funk and soul icon,... http://t.co/NYNKTlYXww 2013-08-01 02:06:44 None
+I'm at Kiji Sushi Bar &amp; Cuisine (San Francisco, CA) http://t.co/UZV8UhwfWS 2013-08-01 02:12:30 {u'type': u'Point', u'coordinates': [-122.42314765, 37.75488348]}
+Any suggestions for hotels, places to see, and places to eat in San Francisco? Hubby and I are headed there Sept-Oct time frame :) 2013-08-01 02:12:28 None
+Look what I found on @eBay! http://t.co/B0jemM720R 2013-08-01 02:12:23 None
+would have failed
+@hcapriles Padre josé Palmar de San Francisco Maracaibo decidió identificar su camioneta https://t.co/xVCOpXcMAS 2013-08-01 02:12:22 None
+#RileggiNT: In giro per San Francisco http://t.co/S4sDz6blL9 2013-08-01 02:12:21 None
+Un rayo golpeo mi auto y me llevo a san francisco en 1965 2013-08-01 02:12:18 None
+Just reported a jam on Avenida Francisco Gavidia, San Salvador. My mood: speedy, http://t.co/Q9jTAmCGha using @waze - Social GPS. 2013-08-01 02:12:13 None
+@KeatonStromberg I wish I was there. Poopy head. Come to San Francisco! 2013-08-01 02:12:13 None
+@RaulOrvananos amigo manda un saludo para la familia montes gomez de san francisco del rincon guanajuato 2013-08-01 02:12:09 {u'type': u'Point', u'coordinates': [-101.85111465, 21.01857181]}
+Look what I found on @eBay! http://t.co/HQM08R7LOl 2013-08-01 02:12:05 None
+Francisco R.'s Review of The Wild Donkey Cafe - San Luis Obispo (1/5) on Yelp: Service and food were disappointing. http://t.co/QDWhtZPib8 2013-08-01 02:12:04 None
+IF YOU'RE GOING TO SAN FRANCISCO, BE SURE TO WEAR SOME FLOWERS IN YOUR HAIR. 2013-08-01 02:12:04 None
+RT @BrianWilson38: Thank you to the fans in San Francisco.  It was an honor to pitch in front of you for all those years.... 2013-08-01 02:12:03 None
+would have failed
+RT @nat_janes: "You got to get the gold while it's still in San Francisco." Thank you @BriaZyniewicz for the dating advice. #JustALittlePie… 2013-08-01 02:12:01 None
+would have failed
+RT @ho_fernandez: Estamos en turno d recolección nocturna en Ancón, Barriadas de Tocúmen,San Francisco,SantaAna,Calidonia,Hatillo,Marañón,P… 2013-08-01 02:12:00 None
+would have failed
+Qué lindo volver a relatar!!! El domingo desde  San Francisco (Cba) Sportivo Belgrano vs #IndependienteRivadavia para Radio Noticias 102.5 2013-08-01 02:11:58 None
+Now #Hiring: Account Manager, Technology (Client Rel Rep) at Kforce Inc. in San Francisco, CA. http://t.co/i50ExTh626 #needajob 2013-08-01 02:11:39 None
+I'm owning a pug when I move to San Francisco. 2013-08-01 02:11:37 None
+I must go to San Francisco before the end of summer 2013-08-01 02:11:34 None
+1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series ATTA BABE http://t.co/Ii9T4XegIN 2013-08-01 02:11:33 None
+Fnaire - Bajhwa MaLhom - Marrakech to San Francisco  http://t.co/prGR9gKniX 2013-08-01 02:11:32 None
+RT @cuantoacuanto: #MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:11:31 None
+Found a place to live and finally booked my plane ticket. See you in two weeks San Francisco. #Immabigkidnow 2013-08-01 02:11:29 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/orMxeRmGVI 2013-08-01 02:11:26 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:11:16 None
+What I would do to be in that bar in San Francisco now 2013-08-01 02:11:16 None
+Save Me, San Francisco - http://t.co/6czfavisXP  - Rocking wines with Grammy winners, "Train" 2013-08-01 02:11:12 None
+@sovadelsov SAN FRANCISCO BABYYYY &lt;3 2013-08-01 02:11:11 None
+Risky sign to have in San Francisco #enteratrear http://t.co/p3vF6HvGev 2013-08-01 02:11:10 None
+Macanbola: Bos Juve Kunjungi San Francisco 49ers http://t.co/3nxO81Qd6A #UpdateJuve 2013-08-01 02:11:04 None
+MARCA TU CAMINO CON BYE!!
+CRA 25 # 15-50 SAN FRANCISCO
+TEL: 6321773 
+e-1 BEIGE X ROJO http://t.co/TCXQJp607D 2013-08-01 02:10:53 None
+Marketing Program Manager 2. San Francisco, CA. http://t.co/ucO2d61iZ0 #jobs 2013-08-01 02:10:51 None
+Everyone must visit San Francisco at least once in their life. Unbelievable. 2013-08-01 02:10:48 None
+would have failed
+My sister is moving to San Francisco 😢 2013-08-01 02:10:46 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/35lH6WwQqw 2013-08-01 02:10:33 None
+TOMORROW Dinner (Thursday 08/01 from 5PM-9PM) - 750 Stanyan St. San Francisco, CA 94117 [http://t.co/lE1Wo5eQfv]... http://t.co/EjFIrpPi3W 2013-08-01 02:10:30 None
+We love San Francisco &amp; all the social businesses in it.  One of our crew is having a great conversation, re: how this cafe uses social. 2013-08-01 02:10:28 None
+Schierholtz's HR in 9th lifts Cubs over Giants 1-0 - Schierholtz played with San Francisco from 2007-2012 before... http://t.co/otNtccy3Zm 2013-08-01 02:10:28 None
+I added a video to a @YouTube playlist http://t.co/TDbKfqJ0eM US 101 North (CA), Driving into San Francisco, San Mateo to SF 2013-08-01 02:10:25 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:10:18 None
+would have failed
+y el helado de brownie san francisco &lt;3 oh wn esa weá me excita 2013-08-01 02:10:14 None
+I miss San Francisco..I miss walking down streets, listening to people sing for money, or seeing people do all kinds of talents 2013-08-01 02:10:13 None
+would have failed
+RT @CupInfo: PHOTOS http://t.co/mfceoCuQVP by Chuck Lantz: of @ArtemisRacing &amp; @OracleTeamUSA at Sail-World | #LVCup #RBYAC #AmericasCup #A… 2013-08-01 02:10:03 None
+San Francisco is a nice city but I would never live here!! 1.Because I need my Dodgers 2.I need my beautiful LA weather and 3.I love LA 2013-08-01 02:09:56 None
+would have failed
+Estuvimos en la reinauguración del Hotel Posada San Francisco, van 10 habitaciones remodeladas, que sea por el bien de Tlaxcala. 2013-08-01 02:09:56 None
+would have failed
+vía @tonycittadinoVV: #MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:52 None
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 17 others http://t.co/t07yO67NCN 2013-08-01 02:09:51 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+@Mariannacep jaja y porque no se vienen ustedes para aca para san francisco? 2013-08-01 02:09:46 None
+would have failed
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:46 None
+RT @niravtolia: Job opportunity: Software Engineer at http://t.co/SobH0XJeV7 - San Francisco Bay Area #jobs http://t.co/HIConQCEgB 2013-08-01 02:09:45 None
+would have failed
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:09:42 None
+would have failed
+RT @technorati: Daytime sessions wrapped at #IMS13 with "Giving Your Fans a Voice." Check out a roundup of that and all the sessions. http:… 2013-08-01 02:09:41 None
+RT @7x7: Hurry! There are still amazing films to see at the 1st-ever San Francisco Japan Film Fest http://t.co/IVL8Loajod 2013-08-01 02:09:40 None
+San Francisco 49ers: 5 Storylines to Follow During Training Camp http://t.co/XtubYrETRl via @po_st #niners 2013-08-01 02:09:27 None
+#MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:09:26 None
+would have failed
+RT @EliecerPrieto: No queremos cárcel en San Francisco, queremos escuelas y buen asfaltado para la Urb. el Soler y sectores aledaños @gurdi… 2013-08-01 02:09:26 None
+I'm really waitin on da 2014 NBA season but until then my Football teams are Carolina Panthers &amp; San Francisco 49's 2013-08-01 02:09:18 None
+I favorited a @YouTube video from @simplepickup http://t.co/mf0JTwFC47 TWERKING IN SAN FRANCISCO PRANK 2013-08-01 02:09:18 None
+San Francisco #49ers: 5 Storylines to Follow During Training Camp http://t.co/jpqmz7Aaqn via @po_st 2013-08-01 02:09:10 None
+would have failed
+Gainesville to Orlando to Denver to San Francisco. Peace ำํ่ 2013-08-01 02:09:01 None
+#GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 11.00 WITA - Live di MNC TV. | Streaming http://t.co/wt624xwa3z 2013-08-01 02:08:56 None
+would have failed
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:08:54 None
+would have failed
+eso
+MAÑANA CHARLIE BROWN'S TRIBUTO A ARCTIC MONKEYS EN CAMPUS SAN FRANCISCO DE LA UCT 5.30 HRS. eso 2013-08-01 02:08:54 None
+would have failed
+RT @BobMetcalfe: Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLf… 2013-08-01 02:08:51 None
+For the #history #photography #architecture nerds... How to Find Photographs of a San Francisco Building: http://t.co/X9REpe7f1F #opengov 2013-08-01 02:08:43 None
+would have failed
+SOUL'D OUT VISION CONFERENCE! In the City by the Bay! San Francisco,Ca! Where there is no prophetic… http://t.co/ZK3DU5Lw3q 2013-08-01 02:08:36 None
+would have failed
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/9JWNc0gQUl 2013-08-01 02:08:32 None
+would have failed
+Richmond Threatens Eminent Domain To Address Foreclosure Crisis « CBS San Francisco http://t.co/wQ5fx62ccS 2013-08-01 02:08:32 None
+would have failed
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/umJk5qxUe7 2013-08-01 02:08:32 None
+RT @macanbola: Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:31 None
+Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:18 None
+I'm at Lightning Tavern (San Francisco, CA) w/ 3 others http://t.co/QHYzyYcrMk 2013-08-01 02:08:13 {u'type': u'Point', u'coordinates': [-122.43, 37.7976]}
+San Francisco Travel from USD 109 for 1 night(s) http://t.co/8cnha5NH45 See San Fran 2013-08-01 02:08:13 None
+would have failed
+San Francisco❤ http://t.co/Gv0V9HMUNu 2013-08-01 02:08:11 None
+Prosecutor: Kidnapped Ohio women kept diaries - WSHM-TV: San Francisco Chronicle... http://t.co/fDZL6L0sXF #TopStories #paedobritain 2013-08-01 02:08:09 None
+SAN FRANCISCO TOMORROW!! 2013-08-01 02:08:07 None
+@speksterrr let's go to San Francisco? ;) 2013-08-01 02:08:04 None
+WATCH: Seagulls Taking Over Major City http://t.co/sHgRqBHAx9 2013-08-01 02:08:03 None
+San Francisco Chronicle Prosecutor: Kidnapped Ohio women kept diaries WSHM-TV (AP Photo/Tony Dejak). Ariel Castro... http://t.co/YS6Q7N4MzX 2013-08-01 02:08:03 None
+Groupon features a daily deal on the best stuff to do, see, eat, and buy http://t.co/yzLFGlu8Kg 2013-08-01 02:08:03 None
+Steve F.'s Review of Zero Zero - San Francisco (5/5) on Yelp: This is one of our go-to restaurants in the area.... http://t.co/dlhEU9nerj 2013-08-01 02:08:03 None
+would have failed
+Back in San Francisco, where I belong💙 #homesweethome 2013-08-01 02:08:02 None
+#Phillies lost to the San Francisco Giants 9-2 on Wednesday night: http://t.co/fBm1XYSnhU 2013-08-01 02:07:56 None
+would have failed
+@GusMenFox  te lo pido de favor manda un saludo a san antonio de la huasteca potosina desde san francisco del rincón por favor 2013-08-01 02:07:49 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:07:37 None
+"@SpudJonesJr: Bitch asked wat state San Francisco in I cnt fuckin stand Sitel bruh" OOOOHHH MYYYY GAAAAWWWD LMMFAOOOOO 2013-08-01 02:07:32 None
+I'm at San Francisco Int'l Airport BART Station - @sfbart (San Francisco, CA) http://t.co/zblgZTJjaQ 2013-08-01 02:07:32 {u'type': u'Point', u'coordinates': [-122.39242673, 37.61593964]}
+I'm at San Francisco International Airport (SFO) (San Francisco, CA) w/ 123 others http://t.co/Pktwjjisod 2013-08-01 02:07:26 {u'type': u'Point', u'coordinates': [-122.38627911, 37.61642405]}
+would have failed
+유현목 감독의 영화 &lt;오발탄&gt;은 원판이 분실되었으며, 한국영상자료원이 샌프란시스코 국제영화제(San Francisco International Film Festival)에 출품되었던 프린트를 보유하고 있다. 2013-08-01 02:07:25 None
+@katherinemiller oh so you're using "san francisco" to be interchangeable with "the slightest modicum of class and taste" okay 2013-08-01 02:07:15 None
+would have failed
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:07:14 None
+Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLfKy 2013-08-01 02:07:13 None
+@da_candyboss LOL dude I had car sickness the whole time omg LOL oh and we went to my cousin's house at San Francisco 2013-08-01 02:07:09 None
+San francisco "@notesSAHABAT: #NowFollowNoters SanDiego or SanFrancisco ?" 2013-08-01 02:07:07 None
+Road tripping with @williekarpf - San Francisco or bust! 2013-08-01 02:07:07 None
+Hey Twitter friends, if I were in San Francisco the first week of September, who could I meet / stay with? 2013-08-01 02:07:04 None
+would have failed
+RT @jbinsingapore: “@Antitaurino: Cada criatura en desgracia tiene el mismo derecho a ser protegida". (San Francisco de Asís) http://t.co/0… 2013-08-01 02:07:01 None
+would have failed
+The San Francisco Giants actually won a game 😂😂 2013-08-01 02:06:52 None
+would have failed
+RT @patoisrecords: Reese Erlich Foreign Correspondent of  NPR's KALW in San Francisco just interview Wayne! Check it out!! http://t.co/hJMS… 2013-08-01 02:06:51 None
+Sigmund Stern Grove, 19th and Sloat, San Francisco, California
+
+This Sunday in SF ~ 
+Funk and soul icon,... http://t.co/NYNKTlYXww 2013-08-01 02:06:44 None
+@tsarfleets San francisco - The Mowgli's 2013-08-01 02:12:42 None
+would have failed
+Richmond Threatens Eminent Domain To Address Foreclosure Crisis « CBS San Francisco http://t.co/kvFsOEYijh 2013-08-01 02:12:41 None
+san francisco "@notesSAHABAT: #NowFollowNoters SanDiego or SanFrancisco ?" 2013-08-01 02:12:41 None
+would have failed
+@AngelMonagas Padre josé Palmar de San Francisco Maracaibo decidió identificar su camioneta https://t.co/xVCOpXcMAS 2013-08-01 02:12:37 None
+I'm at Kiji Sushi Bar &amp; Cuisine (San Francisco, CA) http://t.co/UZV8UhwfWS 2013-08-01 02:12:30 {u'type': u'Point', u'coordinates': [-122.42314765, 37.75488348]}
+Any suggestions for hotels, places to see, and places to eat in San Francisco? Hubby and I are headed there Sept-Oct time frame :) 2013-08-01 02:12:28 None
+Look what I found on @eBay! http://t.co/B0jemM720R 2013-08-01 02:12:23 None
+would have failed
+@hcapriles Padre josé Palmar de San Francisco Maracaibo decidió identificar su camioneta https://t.co/xVCOpXcMAS 2013-08-01 02:12:22 None
+#RileggiNT: In giro per San Francisco http://t.co/S4sDz6blL9 2013-08-01 02:12:21 None
+Un rayo golpeo mi auto y me llevo a san francisco en 1965 2013-08-01 02:12:18 None
+Just reported a jam on Avenida Francisco Gavidia, San Salvador. My mood: speedy, http://t.co/Q9jTAmCGha using @waze - Social GPS. 2013-08-01 02:12:13 None
+@KeatonStromberg I wish I was there. Poopy head. Come to San Francisco! 2013-08-01 02:12:13 None
+@RaulOrvananos amigo manda un saludo para la familia montes gomez de san francisco del rincon guanajuato 2013-08-01 02:12:09 {u'type': u'Point', u'coordinates': [-101.85111465, 21.01857181]}
+Look what I found on @eBay! http://t.co/HQM08R7LOl 2013-08-01 02:12:05 None
+Francisco R.'s Review of The Wild Donkey Cafe - San Luis Obispo (1/5) on Yelp: Service and food were disappointing. http://t.co/QDWhtZPib8 2013-08-01 02:12:04 None
+IF YOU'RE GOING TO SAN FRANCISCO, BE SURE TO WEAR SOME FLOWERS IN YOUR HAIR. 2013-08-01 02:12:04 None
+RT @BrianWilson38: Thank you to the fans in San Francisco.  It was an honor to pitch in front of you for all those years.... 2013-08-01 02:12:03 None
+would have failed
+RT @nat_janes: "You got to get the gold while it's still in San Francisco." Thank you @BriaZyniewicz for the dating advice. #JustALittlePie… 2013-08-01 02:12:01 None
+would have failed
+RT @ho_fernandez: Estamos en turno d recolección nocturna en Ancón, Barriadas de Tocúmen,San Francisco,SantaAna,Calidonia,Hatillo,Marañón,P… 2013-08-01 02:12:00 None
+would have failed
+Qué lindo volver a relatar!!! El domingo desde  San Francisco (Cba) Sportivo Belgrano vs #IndependienteRivadavia para Radio Noticias 102.5 2013-08-01 02:11:58 None
+Now #Hiring: Account Manager, Technology (Client Rel Rep) at Kforce Inc. in San Francisco, CA. http://t.co/i50ExTh626 #needajob 2013-08-01 02:11:39 None
+I'm owning a pug when I move to San Francisco. 2013-08-01 02:11:37 None
+I must go to San Francisco before the end of summer 2013-08-01 02:11:34 None
+1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series ATTA BABE http://t.co/Ii9T4XegIN 2013-08-01 02:11:33 None
+Fnaire - Bajhwa MaLhom - Marrakech to San Francisco  http://t.co/prGR9gKniX 2013-08-01 02:11:32 None
+RT @cuantoacuanto: #MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:11:31 None
+Found a place to live and finally booked my plane ticket. See you in two weeks San Francisco. #Immabigkidnow 2013-08-01 02:11:29 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/orMxeRmGVI 2013-08-01 02:11:26 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:11:16 None
+What I would do to be in that bar in San Francisco now 2013-08-01 02:11:16 None
+Save Me, San Francisco - http://t.co/6czfavisXP  - Rocking wines with Grammy winners, "Train" 2013-08-01 02:11:12 None
+@sovadelsov SAN FRANCISCO BABYYYY &lt;3 2013-08-01 02:11:11 None
+Risky sign to have in San Francisco #enteratrear http://t.co/p3vF6HvGev 2013-08-01 02:11:10 None
+Macanbola: Bos Juve Kunjungi San Francisco 49ers http://t.co/3nxO81Qd6A #UpdateJuve 2013-08-01 02:11:04 None
+MARCA TU CAMINO CON BYE!!
+CRA 25 # 15-50 SAN FRANCISCO
+TEL: 6321773 
+e-1 BEIGE X ROJO http://t.co/TCXQJp607D 2013-08-01 02:10:53 None
+Marketing Program Manager 2. San Francisco, CA. http://t.co/ucO2d61iZ0 #jobs 2013-08-01 02:10:51 None
+Everyone must visit San Francisco at least once in their life. Unbelievable. 2013-08-01 02:10:48 None
+would have failed
+My sister is moving to San Francisco 😢 2013-08-01 02:10:46 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/35lH6WwQqw 2013-08-01 02:10:33 None
+TOMORROW Dinner (Thursday 08/01 from 5PM-9PM) - 750 Stanyan St. San Francisco, CA 94117 [http://t.co/lE1Wo5eQfv]... http://t.co/EjFIrpPi3W 2013-08-01 02:10:30 None
+We love San Francisco &amp; all the social businesses in it.  One of our crew is having a great conversation, re: how this cafe uses social. 2013-08-01 02:10:28 None
+Schierholtz's HR in 9th lifts Cubs over Giants 1-0 - Schierholtz played with San Francisco from 2007-2012 before... http://t.co/otNtccy3Zm 2013-08-01 02:10:28 None
+I added a video to a @YouTube playlist http://t.co/TDbKfqJ0eM US 101 North (CA), Driving into San Francisco, San Mateo to SF 2013-08-01 02:10:25 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:10:18 None
+would have failed
+y el helado de brownie san francisco &lt;3 oh wn esa weá me excita 2013-08-01 02:10:14 None
+I miss San Francisco..I miss walking down streets, listening to people sing for money, or seeing people do all kinds of talents 2013-08-01 02:10:13 None
+would have failed
+RT @CupInfo: PHOTOS http://t.co/mfceoCuQVP by Chuck Lantz: of @ArtemisRacing &amp; @OracleTeamUSA at Sail-World | #LVCup #RBYAC #AmericasCup #A… 2013-08-01 02:10:03 None
+San Francisco is a nice city but I would never live here!! 1.Because I need my Dodgers 2.I need my beautiful LA weather and 3.I love LA 2013-08-01 02:09:56 None
+would have failed
+Estuvimos en la reinauguración del Hotel Posada San Francisco, van 10 habitaciones remodeladas, que sea por el bien de Tlaxcala. 2013-08-01 02:09:56 None
+would have failed
+vía @tonycittadinoVV: #MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:52 None
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 17 others http://t.co/t07yO67NCN 2013-08-01 02:09:51 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+@Mariannacep jaja y porque no se vienen ustedes para aca para san francisco? 2013-08-01 02:09:46 None
+would have failed
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:46 None
+RT @niravtolia: Job opportunity: Software Engineer at http://t.co/SobH0XJeV7 - San Francisco Bay Area #jobs http://t.co/HIConQCEgB 2013-08-01 02:09:45 None
+would have failed
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:09:42 None
+would have failed
+RT @technorati: Daytime sessions wrapped at #IMS13 with "Giving Your Fans a Voice." Check out a roundup of that and all the sessions. http:… 2013-08-01 02:09:41 None
+RT @7x7: Hurry! There are still amazing films to see at the 1st-ever San Francisco Japan Film Fest http://t.co/IVL8Loajod 2013-08-01 02:09:40 None
+San Francisco 49ers: 5 Storylines to Follow During Training Camp http://t.co/XtubYrETRl via @po_st #niners 2013-08-01 02:09:27 None
+#MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:09:26 None
+would have failed
+RT @EliecerPrieto: No queremos cárcel en San Francisco, queremos escuelas y buen asfaltado para la Urb. el Soler y sectores aledaños @gurdi… 2013-08-01 02:09:26 None
+I'm really waitin on da 2014 NBA season but until then my Football teams are Carolina Panthers &amp; San Francisco 49's 2013-08-01 02:09:18 None
+I favorited a @YouTube video from @simplepickup http://t.co/mf0JTwFC47 TWERKING IN SAN FRANCISCO PRANK 2013-08-01 02:09:18 None
+San Francisco #49ers: 5 Storylines to Follow During Training Camp http://t.co/jpqmz7Aaqn via @po_st 2013-08-01 02:09:10 None
+would have failed
+Gainesville to Orlando to Denver to San Francisco. Peace ำํ่ 2013-08-01 02:09:01 None
+#GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 11.00 WITA - Live di MNC TV. | Streaming http://t.co/wt624xwa3z 2013-08-01 02:08:56 None
+would have failed
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:08:54 None
+would have failed
+eso
+MAÑANA CHARLIE BROWN'S TRIBUTO A ARCTIC MONKEYS EN CAMPUS SAN FRANCISCO DE LA UCT 5.30 HRS. eso 2013-08-01 02:08:54 None
+would have failed
+RT @BobMetcalfe: Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLf… 2013-08-01 02:08:51 None
+For the #history #photography #architecture nerds... How to Find Photographs of a San Francisco Building: http://t.co/X9REpe7f1F #opengov 2013-08-01 02:08:43 None
+would have failed
+SOUL'D OUT VISION CONFERENCE! In the City by the Bay! San Francisco,Ca! Where there is no prophetic… http://t.co/ZK3DU5Lw3q 2013-08-01 02:08:36 None
+would have failed
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/9JWNc0gQUl 2013-08-01 02:08:32 None
+would have failed
+Richmond Threatens Eminent Domain To Address Foreclosure Crisis « CBS San Francisco http://t.co/wQ5fx62ccS 2013-08-01 02:08:32 None
+would have failed
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/umJk5qxUe7 2013-08-01 02:08:32 None
+RT @macanbola: Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:31 None
+Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:18 None
+I'm at Lightning Tavern (San Francisco, CA) w/ 3 others http://t.co/QHYzyYcrMk 2013-08-01 02:08:13 {u'type': u'Point', u'coordinates': [-122.43, 37.7976]}
+San Francisco Travel from USD 109 for 1 night(s) http://t.co/8cnha5NH45 See San Fran 2013-08-01 02:08:13 None
+would have failed
+San Francisco❤ http://t.co/Gv0V9HMUNu 2013-08-01 02:08:11 None
+Prosecutor: Kidnapped Ohio women kept diaries - WSHM-TV: San Francisco Chronicle... http://t.co/fDZL6L0sXF #TopStories #paedobritain 2013-08-01 02:08:09 None
+SAN FRANCISCO TOMORROW!! 2013-08-01 02:08:07 None
+@speksterrr let's go to San Francisco? ;) 2013-08-01 02:08:04 None
+WATCH: Seagulls Taking Over Major City http://t.co/sHgRqBHAx9 2013-08-01 02:08:03 None
+San Francisco Chronicle Prosecutor: Kidnapped Ohio women kept diaries WSHM-TV (AP Photo/Tony Dejak). Ariel Castro... http://t.co/YS6Q7N4MzX 2013-08-01 02:08:03 None
+Groupon features a daily deal on the best stuff to do, see, eat, and buy http://t.co/yzLFGlu8Kg 2013-08-01 02:08:03 None
+Steve F.'s Review of Zero Zero - San Francisco (5/5) on Yelp: This is one of our go-to restaurants in the area.... http://t.co/dlhEU9nerj 2013-08-01 02:08:03 None
+would have failed
+Back in San Francisco, where I belong💙 #homesweethome 2013-08-01 02:08:02 None
+#Phillies lost to the San Francisco Giants 9-2 on Wednesday night: http://t.co/fBm1XYSnhU 2013-08-01 02:07:56 None
+would have failed
+@GusMenFox  te lo pido de favor manda un saludo a san antonio de la huasteca potosina desde san francisco del rincón por favor 2013-08-01 02:07:49 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:07:37 None
+"@SpudJonesJr: Bitch asked wat state San Francisco in I cnt fuckin stand Sitel bruh" OOOOHHH MYYYY GAAAAWWWD LMMFAOOOOO 2013-08-01 02:07:32 None
+I'm at San Francisco Int'l Airport BART Station - @sfbart (San Francisco, CA) http://t.co/zblgZTJjaQ 2013-08-01 02:07:32 {u'type': u'Point', u'coordinates': [-122.39242673, 37.61593964]}
+I'm at San Francisco International Airport (SFO) (San Francisco, CA) w/ 123 others http://t.co/Pktwjjisod 2013-08-01 02:07:26 {u'type': u'Point', u'coordinates': [-122.38627911, 37.61642405]}
+would have failed
+유현목 감독의 영화 &lt;오발탄&gt;은 원판이 분실되었으며, 한국영상자료원이 샌프란시스코 국제영화제(San Francisco International Film Festival)에 출품되었던 프린트를 보유하고 있다. 2013-08-01 02:07:25 None
+@katherinemiller oh so you're using "san francisco" to be interchangeable with "the slightest modicum of class and taste" okay 2013-08-01 02:07:15 None
+would have failed
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:07:14 None
+Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLfKy 2013-08-01 02:07:13 None
+@da_candyboss LOL dude I had car sickness the whole time omg LOL oh and we went to my cousin's house at San Francisco 2013-08-01 02:07:09 None
+San francisco "@notesSAHABAT: #NowFollowNoters SanDiego or SanFrancisco ?" 2013-08-01 02:07:07 None
+Road tripping with @williekarpf - San Francisco or bust! 2013-08-01 02:07:07 None
+Hey Twitter friends, if I were in San Francisco the first week of September, who could I meet / stay with? 2013-08-01 02:07:04 None
+Pence, Lopez happy to remain with Giants: San Francisco Giants (Official Site) » Doing nothing me... http://t.co/2qVbhBwhkQ #mlb #giants 2013-08-01 02:13:33 None
+GM says Giants were very interested in Wilson: San Francisco Giants (Official Site) » Though Bria... http://t.co/BaUNKzy740 #mlb #giants 2013-08-01 02:13:33 None
+I'm at Green Chile Kitchen - @greenchilekitch (San Francisco, CA) w/ 2 others http://t.co/ofnOhsp7gK 2013-08-01 02:13:24 None
+I'm at The Pot's (San Francisco, CA) http://t.co/yKSCJA8MzP 2013-08-01 02:13:23 {u'type': u'Point', u'coordinates': [-122.490809, 37.761239]}
+RT @MisOdios: Y ni hablar cuando le dicen 'ómnibus' al COLECTIVO. Vivís en Berazategui, negra, ubicate. Ómnibus habrá en San Francisco, no … 2013-08-01 02:13:22 None
+San Francisco“@notesSAHABAT: #NowFollowNoters SanDiego or SanFrancisco ?” 2013-08-01 02:13:21 None
+I just spent $30 on a blowout and San Francisco decides it's going to be windy. Like every other day. I'm disappointed in myself. 2013-08-01 02:13:18 None
+Auntie Rae came from San Francisco JUST to take Julien on walks (and bring us presents from Turkey)!… http://t.co/Pgqx7UdRRj 2013-08-01 02:13:12 None
+RT @RealMadrid_TV: #futbol El Málaga a punto de fichar al panameño Roberto Chen: Central de 19 años procedente del San Francisco de... http… 2013-08-01 02:13:11 None
+#RileggiNT: In giro per San Francisco http://t.co/DwI5pcCTB4 http://t.co/AeziwE5zYI 2013-08-01 02:13:10 None
+San Francisco Giants beat Philadelphia Phillies to snap five-game skid http://t.co/dB2LbSlrMj 2013-08-01 02:13:10 None
+Report: UK to ban Google Glass while driving - San Francisco Chronicle (blog) http://t.co/CFiH80M7lr #googleglass 2013-08-01 02:13:07 None
+#Sports: Kawakami: San Francisco Giants keep their stars, but for how long? - San Jose Mercury News http://t.co/VEpqIT535z #MixAlotDjz 2013-08-01 02:13:02 None
+Kawakami: San Francisco Giants keep their stars, but for how long? - San Jose Mercury News http://t.co/4XO4UyL1Hq 2013-08-01 02:13:02 None
+BINIBINING PILIPINAS USA article on San Francisco Post written by missalex0x0x http://t.co/VIWxT2klF4 2013-08-01 02:12:53 None
+RT @leefox7085 7h "@la_snc: @leefox7085 San francisco :-)) http://t.co/CLW53SZ6Y1"Thanks♥ 2013-08-01 02:12:52 None
+BEGGING FOR CHANGE TO GET HOME OR AT LEAST SAN FRANCISCO 2013-08-01 02:12:47 None
+@tsarfleets San francisco - The Mowgli's 2013-08-01 02:12:42 None
+Richmond Threatens Eminent Domain To Address Foreclosure Crisis « CBS San Francisco http://t.co/kvFsOEYijh 2013-08-01 02:12:41 None
+san francisco "@notesSAHABAT: #NowFollowNoters SanDiego or SanFrancisco ?" 2013-08-01 02:12:41 None
+@AngelMonagas Padre josé Palmar de San Francisco Maracaibo decidió identificar su camioneta https://t.co/xVCOpXcMAS 2013-08-01 02:12:37 None
+I'm at Kiji Sushi Bar &amp; Cuisine (San Francisco, CA) http://t.co/UZV8UhwfWS 2013-08-01 02:12:30 {u'type': u'Point', u'coordinates': [-122.42314765, 37.75488348]}
+Any suggestions for hotels, places to see, and places to eat in San Francisco? Hubby and I are headed there Sept-Oct time frame :) 2013-08-01 02:12:28 None
+Look what I found on @eBay! http://t.co/B0jemM720R 2013-08-01 02:12:23 None
+@hcapriles Padre josé Palmar de San Francisco Maracaibo decidió identificar su camioneta https://t.co/xVCOpXcMAS 2013-08-01 02:12:22 None
+#RileggiNT: In giro per San Francisco http://t.co/S4sDz6blL9 2013-08-01 02:12:21 None
+Un rayo golpeo mi auto y me llevo a san francisco en 1965 2013-08-01 02:12:18 None
+Just reported a jam on Avenida Francisco Gavidia, San Salvador. My mood: speedy, http://t.co/Q9jTAmCGha using @waze - Social GPS. 2013-08-01 02:12:13 None
+@KeatonStromberg I wish I was there. Poopy head. Come to San Francisco! 2013-08-01 02:12:13 None
+@RaulOrvananos amigo manda un saludo para la familia montes gomez de san francisco del rincon guanajuato 2013-08-01 02:12:09 {u'type': u'Point', u'coordinates': [-101.85111465, 21.01857181]}
+Look what I found on @eBay! http://t.co/HQM08R7LOl 2013-08-01 02:12:05 None
+Francisco R.'s Review of The Wild Donkey Cafe - San Luis Obispo (1/5) on Yelp: Service and food were disappointing. http://t.co/QDWhtZPib8 2013-08-01 02:12:04 None
+IF YOU'RE GOING TO SAN FRANCISCO, BE SURE TO WEAR SOME FLOWERS IN YOUR HAIR. 2013-08-01 02:12:04 None
+RT @BrianWilson38: Thank you to the fans in San Francisco.  It was an honor to pitch in front of you for all those years.... 2013-08-01 02:12:03 None
+RT @nat_janes: "You got to get the gold while it's still in San Francisco." Thank you @BriaZyniewicz for the dating advice. #JustALittlePie… 2013-08-01 02:12:01 None
+RT @ho_fernandez: Estamos en turno d recolección nocturna en Ancón, Barriadas de Tocúmen,San Francisco,SantaAna,Calidonia,Hatillo,Marañón,P… 2013-08-01 02:12:00 None
+Qué lindo volver a relatar!!! El domingo desde  San Francisco (Cba) Sportivo Belgrano vs #IndependienteRivadavia para Radio Noticias 102.5 2013-08-01 02:11:58 None
+Now #Hiring: Account Manager, Technology (Client Rel Rep) at Kforce Inc. in San Francisco, CA. http://t.co/i50ExTh626 #needajob 2013-08-01 02:11:39 None
+I'm owning a pug when I move to San Francisco. 2013-08-01 02:11:37 None
+I must go to San Francisco before the end of summer 2013-08-01 02:11:34 None
+1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series ATTA BABE http://t.co/Ii9T4XegIN 2013-08-01 02:11:33 None
+Fnaire - Bajhwa MaLhom - Marrakech to San Francisco  http://t.co/prGR9gKniX 2013-08-01 02:11:32 None
+RT @cuantoacuanto: #MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:11:31 None
+Found a place to live and finally booked my plane ticket. See you in two weeks San Francisco. #Immabigkidnow 2013-08-01 02:11:29 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/orMxeRmGVI 2013-08-01 02:11:26 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:11:16 None
+What I would do to be in that bar in San Francisco now 2013-08-01 02:11:16 None
+Save Me, San Francisco - http://t.co/6czfavisXP  - Rocking wines with Grammy winners, "Train" 2013-08-01 02:11:12 None
+@sovadelsov SAN FRANCISCO BABYYYY &lt;3 2013-08-01 02:11:11 None
+Risky sign to have in San Francisco #enteratrear http://t.co/p3vF6HvGev 2013-08-01 02:11:10 None
+Macanbola: Bos Juve Kunjungi San Francisco 49ers http://t.co/3nxO81Qd6A #UpdateJuve 2013-08-01 02:11:04 None
+MARCA TU CAMINO CON BYE!!
+CRA 25 # 15-50 SAN FRANCISCO
+TEL: 6321773 
+e-1 BEIGE X ROJO http://t.co/TCXQJp607D 2013-08-01 02:10:53 None
+Marketing Program Manager 2. San Francisco, CA. http://t.co/ucO2d61iZ0 #jobs 2013-08-01 02:10:51 None
+Everyone must visit San Francisco at least once in their life. Unbelievable. 2013-08-01 02:10:48 None
+My sister is moving to San Francisco 😢 2013-08-01 02:10:46 None
+MLB SFO - Recently recalled 1B Brett Pill HR, 4 RBI, 3 H, 2 R vs. Phils, is 6-for-9 in 1st 2 games of series http://t.co/35lH6WwQqw 2013-08-01 02:10:33 None
+TOMORROW Dinner (Thursday 08/01 from 5PM-9PM) - 750 Stanyan St. San Francisco, CA 94117 [http://t.co/lE1Wo5eQfv]... http://t.co/EjFIrpPi3W 2013-08-01 02:10:30 None
+We love San Francisco &amp; all the social businesses in it.  One of our crew is having a great conversation, re: how this cafe uses social. 2013-08-01 02:10:28 None
+Schierholtz's HR in 9th lifts Cubs over Giants 1-0 - Schierholtz played with San Francisco from 2007-2012 before... http://t.co/otNtccy3Zm 2013-08-01 02:10:28 None
+I added a video to a @YouTube playlist http://t.co/TDbKfqJ0eM US 101 North (CA), Driving into San Francisco, San Mateo to SF 2013-08-01 02:10:25 None
+RT @HistoryInPix: Wonderful: California Street, San Francisco, 1964. http://t.co/WUQfz8xApm 2013-08-01 02:10:18 None
+y el helado de brownie san francisco &lt;3 oh wn esa weá me excita 2013-08-01 02:10:14 None
+I miss San Francisco..I miss walking down streets, listening to people sing for money, or seeing people do all kinds of talents 2013-08-01 02:10:13 None
+RT @CupInfo: PHOTOS http://t.co/mfceoCuQVP by Chuck Lantz: of @ArtemisRacing &amp; @OracleTeamUSA at Sail-World | #LVCup #RBYAC #AmericasCup #A… 2013-08-01 02:10:03 None
+San Francisco is a nice city but I would never live here!! 1.Because I need my Dodgers 2.I need my beautiful LA weather and 3.I love LA 2013-08-01 02:09:56 None
+Estuvimos en la reinauguración del Hotel Posada San Francisco, van 10 habitaciones remodeladas, que sea por el bien de Tlaxcala. 2013-08-01 02:09:56 None
+vía @tonycittadinoVV: #MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:52 None
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 17 others http://t.co/t07yO67NCN 2013-08-01 02:09:51 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+@Mariannacep jaja y porque no se vienen ustedes para aca para san francisco? 2013-08-01 02:09:46 None
+#MLB San Francisco 9, Filadelfia 2. Pablo Sandoval 4-2, 1CI, 2CA; Marco Scutaro 5-2, 1CA; Grégor Blanco 4-0, 1BB, 1K 2013-08-01 02:09:46 None
+RT @niravtolia: Job opportunity: Software Engineer at http://t.co/SobH0XJeV7 - San Francisco Bay Area #jobs http://t.co/HIConQCEgB 2013-08-01 02:09:45 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:09:42 None
+RT @technorati: Daytime sessions wrapped at #IMS13 with "Giving Your Fans a Voice." Check out a roundup of that and all the sessions. http:… 2013-08-01 02:09:41 None
+RT @7x7: Hurry! There are still amazing films to see at the 1st-ever San Francisco Japan Film Fest http://t.co/IVL8Loajod 2013-08-01 02:09:40 None
+San Francisco 49ers: 5 Storylines to Follow During Training Camp http://t.co/XtubYrETRl via @po_st #niners 2013-08-01 02:09:27 None
+#MLB San Francisco 9   Philadelphia 2 (FINAL)  http://t.co/ner0QMkp4y 2013-08-01 02:09:26 None
+RT @EliecerPrieto: No queremos cárcel en San Francisco, queremos escuelas y buen asfaltado para la Urb. el Soler y sectores aledaños @gurdi… 2013-08-01 02:09:26 None
+I'm really waitin on da 2014 NBA season but until then my Football teams are Carolina Panthers &amp; San Francisco 49's 2013-08-01 02:09:18 None
+I favorited a @YouTube video from @simplepickup http://t.co/mf0JTwFC47 TWERKING IN SAN FRANCISCO PRANK 2013-08-01 02:09:18 None
+San Francisco #49ers: 5 Storylines to Follow During Training Camp http://t.co/jpqmz7Aaqn via @po_st 2013-08-01 02:09:10 None
+Gainesville to Orlando to Denver to San Francisco. Peace ำํ่ 2013-08-01 02:09:01 None
+#GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 11.00 WITA - Live di MNC TV. | Streaming http://t.co/wt624xwa3z 2013-08-01 02:08:56 None
+RT @JCIndonesia: #GICC Juventus Vs Everton - AT&amp;T Park San Francisco - Pagi ini pkl 10.00 WIB - Live di MNC TV. | Streaming http://t.co/jYi… 2013-08-01 02:08:54 None
+eso
+MAÑANA CHARLIE BROWN'S TRIBUTO A ARCTIC MONKEYS EN CAMPUS SAN FRANCISCO DE LA UCT 5.30 HRS. eso 2013-08-01 02:08:54 None
+RT @BobMetcalfe: Dropbox, started at MIT, moved to San Francisco, now expanding sales and customer support in Austin - http://t.co/yOGTCuLf… 2013-08-01 02:08:51 None
+For the #history #photography #architecture nerds... How to Find Photographs of a San Francisco Building: http://t.co/X9REpe7f1F #opengov 2013-08-01 02:08:43 None
+SOUL'D OUT VISION CONFERENCE! In the City by the Bay! San Francisco,Ca! Where there is no prophetic… http://t.co/ZK3DU5Lw3q 2013-08-01 02:08:36 None
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/9JWNc0gQUl 2013-08-01 02:08:32 None
+Richmond Threatens Eminent Domain To Address Foreclosure Crisis « CBS San Francisco http://t.co/wQ5fx62ccS 2013-08-01 02:08:32 None
+Coquivacoa cae ante la novena del Sureste en la final juvenil de la Serie Mundial de Pequeñas Ligas http://t.co/umJk5qxUe7 2013-08-01 02:08:32 None
+RT @macanbola: Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:31 None
+Bos Juve Kunjungi San Francisco 49ers  http://t.co/JFsfnPb74F 2013-08-01 02:08:18 None
+I'm at Lightning Tavern (San Francisco, CA) w/ 3 others http://t.co/QHYzyYcrMk 2013-08-01 02:08:13 {u'type': u'Point', u'coordinates': [-122.43, 37.7976]}
+San Francisco Travel from USD 109 for 1 night(s) http://t.co/8cnha5NH45 See San Fran 2013-08-01 02:08:13 None
+San Francisco❤ http://t.co/Gv0V9HMUNu 2013-08-01 02:08:11 None
+Prosecutor: Kidnapped Ohio women kept diaries - WSHM-TV: San Francisco Chronicle... http://t.co/fDZL6L0sXF #TopStories #paedobritain 2013-08-01 02:08:09 None
+SAN FRANCISCO TOMORROW!! 2013-08-01 02:08:07 None
+@speksterrr let's go to San Francisco? ;) 2013-08-01 02:08:04 None
+WATCH: Seagulls Taking Over Major City http://t.co/sHgRqBHAx9 2013-08-01 02:08:03 None
+San Francisco Chronicle Prosecutor: Kidnapped Ohio women kept diaries WSHM-TV (AP Photo/Tony Dejak). Ariel Castro... http://t.co/YS6Q7N4MzX 2013-08-01 02:08:03 None
+#ReMix [no &amp; no &amp; no] san francisco gay men's chorus - extrabbaganza!, points: 12 2013-08-01 02:13:58 {u'type': u'Point', u'coordinates': [4.8828217, 52.3622607]}
+Geocoding: 4.8828217, 52.3622607
+Results: Max Euweplein 30II, 1017 MB Amsterdam, The Netherlands
+
+
+@tishwa_ come to San Francisco baby 2013-08-01 02:13:50 {u'type': u'Point', u'coordinates': [-122.52082007, 37.82896463]}
+Geocoding: -122.52082007, 37.82896463
+Results: 941 Simmonds Road, CA 94965, USA
+
+
+I'm at Sushi Rock (San Francisco, CA) http://t.co/yJUpc8BUaP 2013-08-01 02:13:47 {u'type': u'Point', u'coordinates': [-122.40568122, 37.79155059]}
+Geocoding: -122.40568122, 37.79155059
+Results: 560-598 Pine Street, San Francisco, CA 94108, USA
+
+
+I'm at AMC Loews Metreon 16 - @amctheatres for RED 2 (San Francisco, CA) w/ 16 others http://t.co/jIKFj0bVYs 2013-08-01 02:13:44 {u'type': u'Point', u'coordinates': [-122.40364373, 37.78444812]}
+Geocoding: -122.40364373, 37.78444812
+Results: 135 4th Street, Metreon, San Francisco, CA 94103, USA
+
+
+I'm at The Pot's (San Francisco, CA) http://t.co/yKSCJA8MzP 2013-08-01 02:13:23 {u'type': u'Point', u'coordinates': [-122.490809, 37.761239]}
+Geocoding: -122.490809, 37.761239
+Results: 2650 Judah Street, San Francisco, CA 94122, USA
+
+
+I'm at Kiji Sushi Bar &amp; Cuisine (San Francisco, CA) http://t.co/UZV8UhwfWS 2013-08-01 02:12:30 {u'type': u'Point', u'coordinates': [-122.42314765, 37.75488348]}
+Geocoding: -122.42314765, 37.75488348
+Results: 1007 Guerrero Street, San Francisco, CA 94110, USA
+
+
+@RaulOrvananos amigo manda un saludo para la familia montes gomez de san francisco del rincon guanajuato 2013-08-01 02:12:09 {u'type': u'Point', u'coordinates': [-101.85111465, 21.01857181]}
+Geocoding: -101.85111465, 21.01857181
+Results: Inmaculada, Purísima Concepción, 36364 San Francisco del Rincón, Guanajuato, Mexico
+
+
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 17 others http://t.co/t07yO67NCN 2013-08-01 02:09:51 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+Geocoding: -122.3894012, 37.77833859
+Results: San Francisco Bay Trail, San Francisco, CA 94158, USA
+
+
+#ReMix [no &amp; no &amp; no] san francisco gay men's chorus - extrabbaganza!, points: 12 2013-08-01 02:13:58 {u'type': u'Point', u'coordinates': [4.8828217, 52.3622607]}
+Geocoding: 4.8828217, 52.3622607
+Results: Max Euweplein 30II, 1017 MB Amsterdam, The Netherlands
+
+
+@tishwa_ come to San Francisco baby 2013-08-01 02:13:50 {u'type': u'Point', u'coordinates': [-122.52082007, 37.82896463]}
+Geocoding: -122.52082007, 37.82896463
+Results: 941 Simmonds Road, CA 94965, USA
+
+
+I'm at Sushi Rock (San Francisco, CA) http://t.co/yJUpc8BUaP 2013-08-01 02:13:47 {u'type': u'Point', u'coordinates': [-122.40568122, 37.79155059]}
+Geocoding: -122.40568122, 37.79155059
+Results: 560-598 Pine Street, San Francisco, CA 94108, USA
+
+
+I'm at AMC Loews Metreon 16 - @amctheatres for RED 2 (San Francisco, CA) w/ 16 others http://t.co/jIKFj0bVYs 2013-08-01 02:13:44 {u'type': u'Point', u'coordinates': [-122.40364373, 37.78444812]}
+Geocoding: -122.40364373, 37.78444812
+Results: 135 4th Street, Metreon, San Francisco, CA 94103, USA
+
+
+I'm at The Pot's (San Francisco, CA) http://t.co/yKSCJA8MzP 2013-08-01 02:13:23 {u'type': u'Point', u'coordinates': [-122.490809, 37.761239]}
+Geocoding: -122.490809, 37.761239
+Results: 2650 Judah Street, San Francisco, CA 94122, USA
+
+
+I'm at Kiji Sushi Bar &amp; Cuisine (San Francisco, CA) http://t.co/UZV8UhwfWS 2013-08-01 02:12:30 {u'type': u'Point', u'coordinates': [-122.42314765, 37.75488348]}
+Geocoding: -122.42314765, 37.75488348
+Results: 1007 Guerrero Street, San Francisco, CA 94110, USA
+
+
+@RaulOrvananos amigo manda un saludo para la familia montes gomez de san francisco del rincon guanajuato 2013-08-01 02:12:09 {u'type': u'Point', u'coordinates': [-101.85111465, 21.01857181]}
+Geocoding: -101.85111465, 21.01857181
+Results: Inmaculada, Purísima Concepción, 36364 San Francisco del Rincón, Guanajuato, Mexico
+
+
+I'm at AT&amp;T Park for Everton Vs Juventus (San Francisco, CA) w/ 17 others http://t.co/t07yO67NCN 2013-08-01 02:09:51 {u'type': u'Point', u'coordinates': [-122.3894012, 37.77833859]}
+Geocoding: -122.3894012, 37.77833859
+Results: San Francisco Bay Trail, San Francisco, CA 94158, USA
+
+
+#ReMix [no &amp; no &amp; no] san francisco gay men's chorus - extrabbaganza!, points: 12 2013-08-01 02:13:58 {u'type': u'Point', u'coordinates': [4.8828217, 52.3622607]}
+Geocoding: 4.8828217, 52.3622607
+Results: Max Euweplein 30II, 1017 MB Amsterdam, The Netherlands
+
+
+@tishwa_ come to San Francisco baby 2013-08-01 02:13:50 {u'type': u'Point', u'coordinates': [-122.52082007, 37.82896463]}
+Geocoding: -122.52082007, 37.82896463
+Results: 941 Simmonds Road, CA 94965, USA
+
+
+I'm at Sushi Rock (San Francisco, CA) http://t.co/yJUpc8BUaP 2013-08-01 02:13:47 {u'type': u'Point', u'coordinates': [-122.40568122, 37.79155059]}
+Geocoding: -122.40568122, 37.79155059
+Results: 560-598 Pine Street, San Francisco, CA 94108, USA
+
+
+I'm at AMC Loews Metreon 16 - @amctheatres for RED 2 (San Francisco, CA) w/ 16 others http://t.co/jIKFj0bVYs 2013-08-01 02:13:44 {u'type': u'Point', u'coordinates': [-122.40364373, 37.78444812]}
+Geocoding: -122.40364373, 37.78444812
+Results: 135 4th Street, Metreon, San Francisco, CA 94103, USA
+
+
+I'm at The Pot's (San Francisco, CA) http://t.co/yKSCJA8MzP 2013-08-01 02:13:23 {u'type': u'Point', u'coordinates': [-122.490809, 37.761239]}
+Geocoding: -122.490809, 37.761239
+Results: 2650 Judah Street, San Francisco, CA 94122, USA
+
+
+I'm at Kiji Sushi Bar &amp; Cuisine (San Francisco, CA) http://t.co/UZV8UhwfWS 2013-08-01 02:12:30 {u'type': u'Point', u'coordinates': [-122.42314765, 37.75488348]}
+Geocoding: -122.42314765, 37.75488348
+Results: 1007 Guerrero Street, San Francisco, CA 94110, USA
+
+
+@RaulOrvananos amigo manda un saludo para la familia montes gomez de san francisco del rincon guanajuato 2013-08-01 02:12:09 {u'type': u'Point', u'coordinates': [-101.85111465, 21.01857181]}
+Geocoding: -101.85111465, 21.01857181
+Results: Inmaculada, Purísima Concepción, 36364 San Francisco del Rincón, Guanajuato, Mexico
+
+
+I'm at @Yammer HQ (San Francisco, CA) http://t.co/n3i2Zzo5Tf 2013-08-01 15:55:29 {u'type': u'Point', u'coordinates': [-122.41670609, 37.77678674]}
+Geocoding: -122.41670609, 37.77678674
+Results: 1355 Market Street, San Francisco, CA 94103, USA
+
+
+I'm at Powell MUNI Metro Station (San Francisco, CA) http://t.co/cLP6SAtRuw 2013-08-01 15:52:38 {u'type': u'Point', u'coordinates': [-122.4078716, 37.78456917]}
+Geocoding: -122.4078716, 37.78456917
+Results: 25 Cyril Magnin Street, San Francisco, CA 94102, USA
+
+
+Hardgelopen in San Francisco en dat viel niet mee. Steil! http://t.co/hHgtgL2Jxl 2013-08-01 15:50:52 {u'type': u'Point', u'coordinates': [-122.40651006, 37.7829179]}
+Geocoding: -122.40651006, 37.7829179
+Results: 77-85 5th Street, San Francisco, CA 94103, USA
+
+
+I'm at 345 California Center (San Francisco, CA) http://t.co/4Bwk4IlkjL 2013-08-01 15:50:49 {u'type': u'Point', u'coordinates': [-122.40047613, 37.79290364]}
+Geocoding: -122.40047613, 37.79290364
+Results: 381 California Street, San Francisco, CA 94109, USA
+
+
+I'm at Financial District (San Francisco, CA) w/ 2 others http://t.co/AcklOXOmtE 2013-08-01 15:50:33 {u'type': u'Point', u'coordinates': [-122.4009347, 37.79213414]}
+Geocoding: -122.4009347, 37.79213414
+Results: 241-299 Pine Street, San Francisco, CA 94104, USA
+
+
+If you're going to San Francisco~make sure to wear some flowers in your hair. 🌸😌 2013-08-01 15:50:18 {u'type': u'Point', u'coordinates': [-121.44092689, 37.75384905]}
+Geocoding: -121.44092689, 37.75384905
+Results: 1201 Johnson Court, Tracy, CA 95376, USA
+
+
+Today, I moved to California. @ San Francisco International Airport (SFO) http://t.co/dNQIptKNwq 2013-08-01 16:47:56 {u'type': u'Point', u'coordinates': [-122.38627911, 37.61642405]}
+Geocoding: -122.38627911, 37.61642405
+Results: International Terminal Departures, San Francisco International Airport (SFO), Millbrae, CA 94030, USA
+
+
+@MikeMCwise haha that cool, the west coast! Been in San Francisco for a week.. Going 2 LA this weekend then Vegas next week! How was Antigua 2013-08-01 16:47:47 {u'type': u'Point', u'coordinates': [-122.5081182, 37.94883904]}
+Geocoding: -122.5081182, 37.94883904
+Results: Larkspur, CA 94939, USA
+
+
+capacitación hotel San Francisco 2013-08-01 16:47:45 {u'type': u'Point', u'coordinates': [-70.65121922, -33.444667]}
+Geocoding: -70.65121922, -33.444667
+Results: San Diego 2-48, Santiago, Santiago Metropolitan Region, Chile
+
+
+“@BrianWilson38: Thank you to the fans in San Francisco.  It was an honor to pitch in front of you for all those years....” 2013-08-01 16:47:19 {u'type': u'Point', u'coordinates': [-119.67730797, 34.41620151]}
+Geocoding: -119.67730797, 34.41620151
+Results: 633 East Cabrillo Boulevard, Santa Barbara, CA 93103, USA
+
+
