@@ -27,6 +27,7 @@ class Neighborhood(db.Model):
 	name = db.Column(db.String(64), unique = True)
 	geo = db.Column(db.String(64), unique = False)
 	#takes a geo tuple and tests to see which neighborhood it fits. 
+	
 
 class Source(db.Model):
 	__tablename__="source"
