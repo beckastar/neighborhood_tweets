@@ -12,8 +12,10 @@ import app
 from app import db
 import models
 from models import Neighborhood, Source, Content
-from shapely.geometry import Polygon, Point
-# from decimal import Decimal
+from shapely.geometry import Polygon, Point 
+from decimal import *
+import traceback
+
 #Ratings_24, Ratings_7day, Ratings_month, Ratings_year 
 content = Content()
 neighborhoods = Neighborhood()
@@ -37,12 +39,9 @@ def bs(obj): #to_byte_string
 	else:
 		return obj
 
-for tweet in tweepy.Cursor(api.search, q='san francisco').items(100):
+for tweet in tweepy.Cursor(api.search, q='san francisco').items(200):
     if tweet.coordinates :
-        # print bs(tweet.text), bs(tweet.created_at), bs(tweet.coordinates)
-        print "THESE ARE THE COORDINATES", tweet.coordinates['coordinates']
-        print "THIS IS THE LATITUDE", tweet.coordinates['coordinates'][0]
-        print type(tweet.coordinates['coordinates'][0])
+        print bs(tweet.text), bs(tweet.created_at), (tweet.coordinates)
         tweets = bs(tweet.text)
         tweetwhen = bs(tweet.created_at)
         s = tweets.split()
@@ -50,23 +49,51 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(100):
         for word in s:
         		if word.startswith("#"):
         			tags.add(bs(word))
-        			print word
-        #tweetwhere= Geocoder.reverse_geocode(coordinates[1],coordinates[0])
-        #determine which neighborhood tweets are tied to
-        # tweet.coordinates = str(tweet.coordinates)
-        # print tweet.coordinates[37:63]
-        #tweet.coordinates = tweet.coordinates[37:63]
-        # print "this is a string", tweet.coordinates
-        # tweet.coordinates = Decimal(tweet.coordinates)
-        # print "this is a float", tweet.coordinates
-        # #print "this is the coordinate", str(tweet.coordinates[37:63])
-        #tweet.coordinates = str(tweet.coordinates)
-        #'-122.16643003, 37.44679093'
-        # point = Point(tweet.coordinates)
-        # neighborhoods=db.session.query(Neighborhood).all()
-        # for neighborhood in neighborhoods:
-        #     if point.within(int(neighborhood.geo)):
+        			print word  
+        # print "json object coordinates", tweet.coordinates['coordinates'][0][1]
+        lat = tweet.coordinates["coordinates"][0]
+        lon = tweet.coordinates["coordinates"][1]
+        # print "lon", type(lon)
+        # print "lat",lat 
+        # print 'lon', lon
+        # latlong = Point(lat,lon)
+        # print "this is point",latlong
+        neighborhoods=db.session.query(Neighborhood).all()
+       
+        # print "coords",coords[0]
+        # print "type", type(coords[0])
+        # x = Decimal(coords[0])
+        # print "type x", type(x)
+        # for item in coords:
+        #     print item 
+        #     item = Decimal(item)
+        #     print item, type(item)   
+        for neighborhood in neighborhoods:
+            print "hi", neighborhood.geo
+            coords = neighborhood.geo.split(',')
+            print "this is neighborhood geo", neighborhood.geo
+            # neighborhood.geo = neighborhood.geo.split()
+            print "this is neighborhood geo split", neighborhood.geo
+            print "neighborhood.geo typei", type(neighborhood.geo)
+
+            #THIS IS A STRING... PARSE ME!!!!!!
+            x = neighborhood.geo[0]
+
+            #PARSE ME STARTER GUIDE
+
+            # neighborhood.geo[0]=unicodedata.numeric(neighborhood.geo[0])
+            # print "neighborhood.geo typei [0]", type(neighborhood.geo[0]), neighborhood.geo[0]
+
+            square = () 
+                # latlongs = float(latlongs)
+                
+                # square.add(latlongs)
+                # print square 
+
+        #     if latlong.within((neighborhood.geo)):
         #         content.id = neighborhood.id
+        print type(tweets)
+        print tweets
         content.message = tweets
         content.timestamp = tweetwhen
         content.hashtags = " ".join(tags)
@@ -75,9 +102,9 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(100):
  #       	db.session.add(neighborhoods)
 	        db.session.add(content)
 	        db.session.commit()
-    	except:
-    		print "Unicode error."
-    		pass
+    	except Exception, e:
+    		# print "Unicode error."
+    		traceback.print_exc()
 
 
 
