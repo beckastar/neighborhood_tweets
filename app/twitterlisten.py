@@ -9,8 +9,7 @@ from tweepy import OAuthHandler
 # import pygeocoder
 # from pygeocoder import Geocoder
 import app 
-from app import db
-import models
+from app import db 
 from models import Neighborhood, Source, Content
 from shapely.geometry import box, Point 
 from decimal import *
@@ -60,46 +59,34 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
     if num_tweets % 100 == 0:
         print "X" * 10, num_tweets
     if tweet.coordinates:
-        #print bs(tweet.text), bs(tweet.created_at), (tweet.coordinates)
         tweet_text = tweet.text
         tweetwhen = bs(tweet.created_at)
         s = tweet_text.split()
-        tags = set()
+        #tags = set()
         for word in s:
-        		if word.startswith("#"):
-        			tags.add(bs(word))
-        			print word  
+            if word.startswith("#"):
+                word = bs(word)
+                if content.hashtags == None:
+                    content.hashtags = ""
+                content.hashtags = content.hashtags +  word
+        #print tags
         # print "json object coordinates", tweet.coordinates['coordinates'][0][1]
         lat = tweet.coordinates["coordinates"][0]
         lon = tweet.coordinates["coordinates"][1]
         point = Point(lat, lon)
-
         neighborhood = find_in_boxes(boxes, point)
         if neighborhood is None:
             continue
-
-        # print "coords",coords[0]
-        # print "type", type(coords[0])
-        # x = Decimal(coords[0])
-        # print "type x", type(x)
-        # for item in coords:
-        #     print item 
-        #     item = Decimal(item)
-        #     print item, type(item)   
         print type(tweet_text)
         print bs(tweet_text)
         print neighborhood.name
-
         content.message = tweet_text
         content.timestamp = tweetwhen
-        content.hashtags = " ".join(tags)
-        #create instance of content class 
+#        content.hashtags = " ".join(tags) 
         try:
- #       	db.session.add(neighborhoods)
 	        db.session.add(content)
 	        db.session.commit()
     	except Exception, e:
-    		# print "Unicode error."
     		traceback.print_exc()
 
 
