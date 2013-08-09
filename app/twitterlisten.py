@@ -12,7 +12,7 @@ import app
 from app import db
 import models
 from models import Neighborhood, Source, Content
-from shapely.geometry import Polygon, Point 
+from shapely.geometry import box, Point 
 from decimal import *
 import traceback
 
@@ -39,6 +39,21 @@ def bs(obj): #to_byte_string
 	else:
 		return obj
 
+def build_boxes():
+    box_to_nb = []
+    for neighborhood in db.session.query(Neighborhood).all():
+        box_to_nb.append([
+            box(neighborhood.west_long, neighborhood.south_lat, neighborhood.east_long, neighborhood.north_lat), 
+            neighborhood
+        ])    
+    return box_to_nb
+
+def find_in_boxes(boxes, point):
+    for box, neighborhood in boxes:
+        if box.contains(point):
+            return neighborhood
+
+boxes = build_boxes()
 for tweet in tweepy.Cursor(api.search, q='san francisco').items(200):
     if tweet.coordinates :
         print bs(tweet.text), bs(tweet.created_at), (tweet.coordinates)
@@ -53,13 +68,14 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(200):
         # print "json object coordinates", tweet.coordinates['coordinates'][0][1]
         lat = tweet.coordinates["coordinates"][0]
         lon = tweet.coordinates["coordinates"][1]
-        # print "lon", type(lon)
-        # print "lat",lat 
-        # print 'lon', lon
-        # latlong = Point(lat,lon)
-        # print "this is point",latlong
-        neighborhoods=db.session.query(Neighborhood).all()
-       
+        point = Point(lat, lon)
+
+        neighborhood = find_in_boxes(boxes, point)
+        if neighborhood is None:
+            continue
+
+        
+
         # print "coords",coords[0]
         # print "type", type(coords[0])
         # x = Decimal(coords[0])
@@ -68,30 +84,6 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(200):
         #     print item 
         #     item = Decimal(item)
         #     print item, type(item)   
-        for neighborhood in neighborhoods:
-            print "hi", neighborhood.geo
-            coords = neighborhood.geo.split(',')
-            print "this is neighborhood geo", neighborhood.geo
-            # neighborhood.geo = neighborhood.geo.split()
-            print "this is neighborhood geo split", neighborhood.geo
-            print "neighborhood.geo typei", type(neighborhood.geo)
-
-            #THIS IS A STRING... PARSE ME!!!!!!
-            x = neighborhood.geo[0]
-
-            #PARSE ME STARTER GUIDE
-
-            # neighborhood.geo[0]=unicodedata.numeric(neighborhood.geo[0])
-            # print "neighborhood.geo typei [0]", type(neighborhood.geo[0]), neighborhood.geo[0]
-
-            square = () 
-                # latlongs = float(latlongs)
-                
-                # square.add(latlongs)
-                # print square 
-
-        #     if latlong.within((neighborhood.geo)):
-        #         content.id = neighborhood.id
         print type(tweets)
         print tweets
         content.message = tweets
