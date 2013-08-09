@@ -54,12 +54,16 @@ def find_in_boxes(boxes, point):
             return neighborhood
 
 boxes = build_boxes()
-for tweet in tweepy.Cursor(api.search, q='san francisco').items(200):
-    if tweet.coordinates :
-        print bs(tweet.text), bs(tweet.created_at), (tweet.coordinates)
-        tweets = bs(tweet.text)
+num_tweets = 0
+for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
+    num_tweets += 1
+    if num_tweets % 100 == 0:
+        print "X" * 10, num_tweets
+    if tweet.coordinates:
+        #print bs(tweet.text), bs(tweet.created_at), (tweet.coordinates)
+        tweet_text = tweet.text
         tweetwhen = bs(tweet.created_at)
-        s = tweets.split()
+        s = tweet_text.split()
         tags = set()
         for word in s:
         		if word.startswith("#"):
@@ -74,8 +78,6 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(200):
         if neighborhood is None:
             continue
 
-        
-
         # print "coords",coords[0]
         # print "type", type(coords[0])
         # x = Decimal(coords[0])
@@ -84,9 +86,11 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(200):
         #     print item 
         #     item = Decimal(item)
         #     print item, type(item)   
-        print type(tweets)
-        print tweets
-        content.message = tweets
+        print type(tweet_text)
+        print bs(tweet_text)
+        print neighborhood.name
+
+        content.message = tweet_text
         content.timestamp = tweetwhen
         content.hashtags = " ".join(tags)
         #create instance of content class 
