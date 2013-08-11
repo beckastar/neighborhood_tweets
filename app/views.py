@@ -3,7 +3,7 @@ from app import app, db
 from datetime import datetime
 from flask import render_template
 from models import Neighborhood, Content
-
+from flask import jsonify
  
 
 # @app.before_request
@@ -17,6 +17,13 @@ from models import Neighborhood, Content
 #     db.session.rollback()
 #     return render_template('500.html'), 500
 
+@app.route("/fish")
+def results_json():
+	cols = ['neighborhood_id']
+	data = Content.query.all()
+	result = [{col:getattr(d, col) for col in cols} for d in data]
+	return jsonify(result=result)
+
 @app.route('/')
 def index(): 
         #return render_template("index.html")
@@ -25,13 +32,13 @@ def index():
 		return render_template('index.html', data=data)
        
 
-@app.route('/chart/') 
-def hello():
-	return 
+# @app.route('/chart/') 
+# def hello():
+# 	return 
 
-@app.route('/layout/')
-def layouts():
-	return render_template()
+# @app.route('/layout')
+# def layouts():
+# 	return render_template()
 
      
 
