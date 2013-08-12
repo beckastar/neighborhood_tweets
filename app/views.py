@@ -20,9 +20,16 @@ from flask import jsonify
 @app.route("/fish")
 def results_json():
 	cols = ['neighborhood_id']
-	data = Content.query.all()
-	result = [{col:getattr(d, col) for col in cols} for d in data]
-	return jsonify(result=result)
+	data = Content.query.filter(Content.neighborhood_id != None).all()
+	counts = {}
+	for c in data:
+		if counts.get(c.neighborhood_id):
+			counts[c.neighborhood_id] += 1
+		else:
+			counts[c.neighborhood_id] = 1
+
+	# result = [{col:getattr(d, col) for col in cols} for d in data]
+	return jsonify(result=counts)
 
 @app.route('/')
 def index(): 
