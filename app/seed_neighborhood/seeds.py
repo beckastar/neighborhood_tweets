@@ -7,85 +7,165 @@ from sqlalchemy import create_engine, types
 from app import db
 import models 
 from models import Neighborhood, Source, Content
+
 #populate sqlalchemy class with name
 #geo = "37.3343,34.23423,32.3434,-23.445"
-lh = str((37.770336, -122.436812, 37.774814, -122.424366)).strip("()")
-lower_haight = Neighborhood(name="Lower Haight", geo=lh)
-db.session.add(lower_haight)
-uh = str((37.768269, -122.453849, 37.773154, -122.436790)).strip("()")
-upper_haight = Neighborhood(name= "Upper Haight", geo=uh)
-db.session.add(upper_haight)
-dt = str((37.765004, -122.435632,37.769482,-122.427049)).strip("()")
-duboce_triangle = Neighborhood(name = "Duboce Triangle", geo=dt)
-db.session.add(duboce_triangle)
-fllmre = str((37.779590, -122.438722,37.785017,-122.423873)).strip("()")
-fillmore = Neighborhood(name= "Fillmore", geo = fllmre)
-db.session.add(fillmore)
-im = str((37.758326,-122.424839,37.765586, -122.407801)).strip("()")
-inner_mission = Neighborhood(name = "Inner Mission", geo=im)
-db.session.add(inner_mission)
-os = str((37.736201, -122.506292, 37.765315, -122.477324)).strip("()")
-outer_sunset = Neighborhood(name = "Outer Sunset", geo=os)
-db.session.add(outer_sunset)
-cv = str((37.761108, -122.452776, 37.766909, -122.447541)).strip("()")
-cole_valley = Neighborhood(name = "Cole Valley", geo=cv)
-db.session.add(cole_valley)
-om = str((37.741597, -122.424195, 37.748056, -122.407544)).strip("()")
-outer_mission = Neighborhood(name = "Outer Mission", geo=om)
-db.session.add(outer_mission)
-inner_sun = str((37.750590, -122.476208, 37.766367, -122453034)).strip("()")
-inner_sunset = Neighborhood(name = "Inner Sunset", geo = inner_sun)
-db.session.add(inner_sunset)
-ws = str((37.779732, -122.438786, 37.84413, -122.431147)).strip("()")
-western_addition = Neighborhood(name="Western Addition", geo = ws)
-db.session.add(western_addition)
-ph = str((37.787397, -122.446725, 37.795503, -122.425053)).strip("()")
-pacific_heights = Neighborhood(name = "Pacific Heights", geo = ph)
-db.session.add(pacific_heights)
-cstr  = str((37.754220, -122.436726, 37.762804, -122.428529)).strip("()")
-castro = Neighborhood(name ="Castro", geo = cstr)
-db.session.add(castro)
-ir = str((37.773078, -122.471852, 37.789155, -122.459579)).strip("()")
-inner_richmond = Neighborhood(name="Inner Richmond", geo = ir)
-db.session.add(inner_richmond)
-ori = str((37.778641, -122.513394, 37.786170, -122.472968)).strip("()")
-outer_richmond = Neighborhood(name="Outer Richmond", geo= ori)
-db.session.add(outer_richmond)
-noe = str((37.744991, -122.444193, 37.753270, -122.425439)).strip("()")
-noe_valley = Neighborhood(name = "Noe Valley", geo = noe)
-db.session.add(noe_valley)
-bh =  str((37.744991, -122.444193, 37.753270, -122.425439)).strip("()")
-bernal = Neighborhood(name = "Bernal Heights", geo = bh)
-db.session.add(bernal)
-gp =str((37.733242, -122.441897, 37.742134, -122.425332)).strip("()")
-glen_park = Neighborhood(name = "Glen Park", geo = gp)
-db.session.add(glen_park)
-pot = str((37.750143, -122.405934, 37.766293, -122.393661)).strip("()")
-potrero = Neighborhood(name = "Potrero Hill", geo = pot)
-db.session.add(potrero)
-dog =  str((37.750414, -122.392201, 37.766836, -122.388167)).strip("()")
-dogpatch = Neighborhood(name = "Dogpatch", geo = dog)
-db.session.add(dogpatch)
-bay =  str((37.724960, -122.394176, 37.732156, -122.378039)).strip("()")
-bayview = Neighborhood(name = "Bayview", geo = bay)
-db.session.add(bayview)
-som =   str((37.770839,-122.417865,37.782304,-122.399154)).strip("()")
-soma = Neighborhood(name = "Soma", geo = som)
-db.session.add(soma)
-st =  str((37.728491, -122.404819,37.736025,-122.391343)).strip("()")
-silver_terrace = Neighborhood(name = "Silver Terrace", geo = st)
-db.session.add(silver_terrace)
-ex =  str((37.721294,-122.436919,37.729034,-122.419667)).strip("()")
-excelsior = Neighborhood(name = "Excelsior", geo=ex)
-db.session.add(excelsior)
-wp = str((37.734871,-122.475028,37.743627,-122.464299)).strip("()")
-west_portal = Neighborhood(name = "West Portal", geo = wp)
-db.session.add(west_portal)
-ing =  str((37.714437,-122.470737,37.722516,-122.451768)).strip("()")
-ingleside = Neighborhood(name = "Ingleside", geo = ing)
-db.session.add(ingleside)
- #figre out how to store the boundries of the neighborhood)
+neighborhoods = [
+	{'name': 'Lower Haight',
+	 'left_lat': 37.770336,
+	 'left_long': -122.436812,
+	 'right_lat': 37.774814,
+	 'right_long': -122.42436},
+	},
+	{'name': 'Upper Haight',
+	'left_lat': 37.768269
+	'left_long': -122.453849,
+	'right_lat': 37.773154,
+	'right_long': -122.436790
+	},
+	{'name': 'Doboce Triangle',
+	'left_lat': 37.765004,
+	'left_long': 122.435632,
+	'right_lat': 37.769482,
+	'right_long': -122.427049
+	},
+	{'name': 'Fillmore',
+	'left_lat': 37.779590,
+	'left_long': -122.438722,
+	'right_lat': 37.785017,
+	'right_long': -122.423873
+	},
+	{'name': 'Inner Mission',
+	'left_lat': 37.758326,
+	'left_long': -122.424839,
+	'right_lat': 37.765586,
+	'right_long' -122.407801
+	},
+	{'name': 'Outer Sunset',
+	'left_lat': 37.736201.
+	'left_long': -122.506292,
+	'right_lat': 37.765315,
+	'right_long': -122.477324
+	},
+	{'name': 'Cole Valley',
+	'left_lat': 37.761108,
+	'left_long': -122.452776,
+	'right_lat': 37.766909,
+	'right_long': -122.447541
+	},
+	{'name': 'Outer Mission',
+	'left_lat': 37.741597,
+	'left_long': -122.424195,
+	'right_lat': 37.748056,
+	'right_long': -122.407544
+	},
+	{'name': 'Inner Sunset',
+	'left_lat': 37.750590,
+	'left_long': -122.476208,
+	'right_lat': 37.766367,
+	'right_long': -122453034
+	},
+	{'name': 'Western Addition',
+	'left_lat': 37.779732,
+	'left_long': -122.438786,
+	'right_lat': 37.84413,
+	'right_long': -122.431147
+	},
+	{'name': 'Pacific Heights',
+	'left_lat': 37.787397, 
+	'left_long': -122.446725,
+	'right_lat': 37.795503,
+	'right_long': -122.425053
+	},
+	{'name': 'Castro',
+	'left_lat': 37.754220,
+	'left_long': -122.436726,
+	'right_lat': 37.762804,
+	'right_long': -122.428529
+	},
+	{'name': 'Inner Richmond',
+	'left_lat': 37.773078,
+	'left_long': -122.471852,
+	'right_lat': 37.789155,
+	'right_long': -122.459579
+	},
+	{'name': 'Outer Richmond',
+	'left_lat': 37.778641,
+	'left_long': -122.513394,
+	'right_lat': 37.786170,
+	'right_long': -122.472968
+	},
+	{'name': 'Noe Valley',
+	'left_lat': 37.744991,
+	'left_long': -122.444193,
+	'right_lat': 37.753270,
+	'right_long': -122.425439
+	},
+	{'name': 'Bernal Heights',
+	'left_lat': 37.744991,
+	'left_long': -122.444193,
+	'right_lat': 37.753270,
+	'right_long': -122.425439
+	},
+	{'name': 'Glen Park',
+	'left_lat': 37.733242,
+	'left_long': -122.441897,
+	'right_lat': 37.742134,
+	'right_long': -122.425332 
+	},
+	{'name': 'Potrero Hill',
+	'left_lat': 37.750143,
+	'left_long': -122.405934,
+	'right_lat': 37.766293,
+	'right_long': -122.393661
+	},
+	{'name': 'Dogpatch',
+	'left_lat': 37.750414,
+	'left_long': -122.392201,
+	'right_lat': 37.766836,
+	'right_long': -122.388167 
+	},
+	{'name': 'Bayview',
+	'left_lat': 37.724960,
+	'left_long': -122.394176,
+	'right_lat': 37.732156,
+	'right_long': -122.378039
+	},
+	{'name': 'SOMA',
+	'left_lat': 37.770839,
+	'left_long': -122.417865,
+	'right_lat': 37.782304,
+	'right_long': -122.399154
+	},
+	{'name': 'Silver Terrace',
+	'left_lat': 37.728491, 
+	'left_long': -122.404819,
+	'right_lat': 37.736025,
+	'right_long': -122.391343
+	},
+	{'name': 'Excelsior',
+	'left_lat': 37.721294,
+	'left_long': -122.436919,
+	'right_lat': 37.729034,
+	'right_long': -122.419667
+	},
+	{'name': 'West Portal',
+	'left_lat': 37.734871,
+	'left_long': -122.475028,
+	'right_lat': 37.743627,
+	'right_long': -122.464299
+	},
+	{'name': 'Ingleside',
+	'left_lat': 37.714437,
+	'left_long': -122.470737,
+	'right_lat': 37.722516,
+	'right_long': -122.451768
+	}
+]
 
+for neighborhood in neighborhoods:
+	db.session.add(Neighborhood(**neighborhood))
+	
 db.session.commit()
 #lower_haight.boundries => #box(37.770336, -122.436812, 37.774814, -122.424366)
 

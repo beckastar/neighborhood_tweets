@@ -21,13 +21,20 @@ auth.set_access_token(access_key, access_secret)
 api = tweepy.API(auth) 
 #modify to store the boundaries
 #next seed 
+# change data model to have a column for each corner of the bounding box 
+#that way i can say "if point.within(neighborhood.bottomLeft, neighborhood.bottomRight, etc"
+
+TWITTER_SOURCE_ID = 1
+
 class Neighborhood(db.Model):
 	__tablename__ =  "neighborhoods"
 	id = db.Column(db.Integer, primary_key= True)
+	south_lat =  db.Column(db.DECIMAL, unique=False)
+	west_long = db.Column(db.DECIMAL, unique=False)
+	north_lat = db.Column(db.DECIMAL, unique=False)
+	east_long = db.Column(db.DECIMAL, unique=False)
 	name = db.Column(db.String(64), unique = True)
-	geo = db.Column(db.String(64), unique = False)
 	#takes a geo tuple and tests to see which neighborhood it fits. 
-	
 
 class Source(db.Model):
 	__tablename__="source"

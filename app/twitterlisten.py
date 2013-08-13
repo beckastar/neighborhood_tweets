@@ -50,7 +50,11 @@ def build_boxes():
 def find_in_boxes(boxes, point):
     for box, neighborhood in boxes:
         if box.contains(point):
+            print "This is neighborhood", neighborhood.name 
             return neighborhood
+
+
+
 
 boxes = build_boxes()
 num_tweets = 0
@@ -58,6 +62,7 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
     num_tweets += 1
     if num_tweets % 100 == 0:
         print "X" * 10, num_tweets
+        # break
     if tweet.coordinates:
         tweet_text = tweet.text
         tweetwhen = bs(tweet.created_at)
@@ -68,7 +73,11 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
                 word = bs(word)
                 if content.hashtags == None:
                     content.hashtags = ""
-                content.hashtags = content.hashtags +  word
+                else:
+                    # try:
+                    content.hashtags = content.hashtags + word 
+                    # except:
+                        # UnicodeDecodeError
         #print tags
         # print "json object coordinates", tweet.coordinates['coordinates'][0][1]
         lat = tweet.coordinates["coordinates"][0]
@@ -80,6 +89,7 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
         print type(tweet_text)
         print bs(tweet_text)
         print neighborhood.name
+        content.neighborhood_id = neighborhood.id
         content.message = tweet_text
         content.timestamp = tweetwhen
 #        content.hashtags = " ".join(tags) 
@@ -87,7 +97,8 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
 	        db.session.add(content)
 	        db.session.commit()
     	except Exception, e:
-    		traceback.print_exc()
+            print "error, not committing"
+            traceback.print_exc()
 
 
 

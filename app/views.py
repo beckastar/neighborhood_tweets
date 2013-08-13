@@ -29,36 +29,27 @@ def results_json():
 			counts[c.neighborhood_id] = 1
 
 	# result = [{col:getattr(d, col) for col in cols} for d in data]
-	return jsonify(result=counts)
+	c = jsonify(counts)
+	# l = []
+	# for k, v in c:
+	# 	l.append[(k, d[k])] 
+	return c
+ 
+
+#next step: get google charts to take in data. look up jinja 
 
 @app.route('/')
-def index(): 
-        #return render_template("index.html")
-		data = [('Western Addition', 11), ('Upper Haight', 30), ('Potrero', 15), ('Dogpatch', 42),
-			('Pacific Heights', 38), ('Fillmore', 45), ('Cole Valley', 52)]
-		return render_template('index.html', data=data)
-       
+@app.route('/charts')
+def hello():
+	return render_template('charts.html')
 
-# @app.route('/chart/') 
-# def hello():
-# 	return 
 
 # @app.route('/layout')
 # def layouts():
 # 	return render_template()
 
      
-
-# @app.route('/twitterfeed')
-# def twitterfeed():
-# 	return render_template("twitterfeed.html", 
-# 		title = "test")
-
-
-# @app.route("/my_map")
-# def my_map():
-# 	print "This is a map"
-# 	return render_template("map.html")
+ 
  
 #  if __name__ == '__main__':
 # 	# Automatically detect changes to charts.py and reload the server as

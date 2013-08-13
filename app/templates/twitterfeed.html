@@ -1,24 +1,29 @@
-<a class="twitter-timeline" href="https://twitter.com/beckastar" data-widget-id="360148264110141441">Tweets by @beckastar</a>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none">Tweet</a>
+        var options = {
+          title: 'My Daily Activities'
+        };
 
-<script src="customize-twitter-1.1.min.js" type="text/javascript"></script>
-
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-    if(!d.getElementById(id)){js=d.createElement(s);
-        js.id=id;js.src="https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js,fjs);}
-    }(document,"script","twitter-wjs");
-</script>
-
-<!-- <script src="customize-twitter-1.1.min.js" type="text/javascript"></script> -->
-
-<!-- import python library and embed in different script tag
- -->
-<script>
-var options = {
-    "url": "/my-styles.css"
-};
-CustomizeTwitterWidget(options);
-</script>
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
