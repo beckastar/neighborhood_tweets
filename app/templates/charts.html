@@ -1,0 +1,33 @@
+
+<html>
+  <head>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+     
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var datatable
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+         $.get('/fish', function(data){
+            console.log(data)
+            var a = []
+            for (var thing in data) {
+              a.push([data[thing], thing])
+            }
+            datatable = google.visualization.arrayToDataTable(a);
+            var options = {
+              title: 'My Daily Activities'
+            };
+            chart.draw(datatable, options);
+          })
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+    {{c}}
+  </body>
+</html>
