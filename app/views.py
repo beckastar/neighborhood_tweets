@@ -26,6 +26,36 @@ def make_list():
 		data_dict[d.name]= d.id
 	j = jsonify(data_dict)
 	return j
+	#key is name, value is id. 
+
+@app.route("/combine")
+def dict_merged_tables():
+	#create dictionary with the name as keys and the count as values.
+	#this code produces the dictionary with the id as a key and the counter as a value.
+	data = Content.query.filter(Content.neighborhood_id != None).all()
+	counts = {}
+	for c in data:
+		if counts.get(c.neighborhood_id):
+			counts[c.neighborhood_id] += 1
+		else:
+			counts[c.neighborhood_id] = 1
+	print counts
+	thisdata = Neighborhood.query.all()
+	data_dict = {} 
+	for d in thisdata:
+		data_dict[d.name]= d.id
+	print data_dict
+	#in j, key is name, value is id.
+	newdict = {}
+	#1. look at the key in c
+	for key in data_dict:
+		for k in counts:
+			if data_dict[key]== k:
+				newdict[key]=counts[k]
+				print newdict
+	new = jsonify(newdict)
+	return new 
+
 
 @app.route('/')
 @app.route('/charts')
