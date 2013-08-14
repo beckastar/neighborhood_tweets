@@ -11,15 +11,28 @@
       function drawChart() {
         var datatable
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-         $.get('/fish', function(data){
+         $.get('/combine', function(data){
+          // Combine doesn't yield a string yet
             console.log(data)
             var a = []
             for (var thing in data) {
-              a.push([data[thing], thing])
+              a.push([thing, data[thing]])
             }
-            datatable = google.visualization.arrayToDataTable(a);
+            console.log(a)
+
+            // a = [
+            //   ['Country', 'Population', 'Area'],
+            //   ['CN', 1324, 9640821],
+            //   ['IN', 1133, 3287263],
+            //   ['US', 304, 9629091],
+            //   ['ID', 232, 1904569],
+            //   ['BR', 187, 8514877]
+            // ]
+            // console.log(a)
+
+            datatable = google.visualization.arrayToDataTable(a, false);
             var options = {
-              title: 'My Daily Activities'
+              title: 'Where'
             };
             chart.draw(datatable, options);
           })
