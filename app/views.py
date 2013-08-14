@@ -25,15 +25,17 @@ def make_list():
 	for d in thisdata:
 		data_dict[d.name]= d.id
 	j = jsonify(data_dict)
-	return j
-	#key is name, value is id. 
+	return j 
 
 @app.route("/combine")
 def dict_merged_tables():
 	#create dictionary with the name as keys and the count as values.
-	#this code produces the dictionary with the id as a key and the counter as a value.
+	#this code produces the dictionary with the id as a key and the counter as a value.\\
+	cols = ['name']
 	data = Content.query.filter(Content.neighborhood_id != None).all()
+	#content has neighborhood id, with neighborhood name as the foreign key
 	counts = {}
+	#the loop below creates a dict from content with neighborhood keys and their frequency of occurence.
 	for c in data:
 		if counts.get(c.neighborhood_id):
 			counts[c.neighborhood_id] += 1
@@ -41,20 +43,19 @@ def dict_merged_tables():
 			counts[c.neighborhood_id] = 1
 	print counts
 	thisdata = Neighborhood.query.all()
+	#the loop below creates a dictionary from neighborhood pairing the id and the name.
 	data_dict = {} 
 	for d in thisdata:
 		data_dict[d.name]= d.id
-	print data_dict
-	#in j, key is name, value is id.
 	newdict = {}
-	#1. look at the key in c
+	#1the loop below pairs the name with the count
 	for key in data_dict:
 		for k in counts:
 			if data_dict[key]== k:
 				newdict[key]=counts[k]
-				print newdict
 	new = jsonify(newdict)
 	return new 
+
 
 
 @app.route('/')
