@@ -4,10 +4,10 @@ import sys
 import tweepy
 import json
 from tweepy.streaming import StreamListener
+from tweepy import api as tweepy_api
 from tweepy import Stream 
 from tweepy import OAuthHandler 
-# import pygeocoder
-# from pygeocoder import Geocoder
+from tweepy.models import Status
 import app 
 from app import db 
 from models import Neighborhood, Source, Content
@@ -16,7 +16,6 @@ from decimal import *
 import traceback
 
 #Ratings_24, Ratings_7day, Ratings_month, Ratings_year 
-content = Content()
 neighborhoods = Neighborhood()
 
 consumer_key = '8vT4akwvPR1sWQIbO6y8g'
@@ -31,12 +30,12 @@ api = tweepy.API(auth)
 #query - opening connecting 
 
 def bs(obj): #to_byte_string
-	if isinstance(obj, str):
-		return obj
-	elif isinstance(obj, unicode):
-		return obj.encode('utf-8')
-	else:
-		return obj
+    if isinstance(obj, str):
+        return obj
+    elif isinstance(obj, unicode):
+        return obj.encode('utf-8')
+    else:
+        return obj
 
 def build_boxes():
     box_to_nb = []
@@ -53,17 +52,35 @@ def find_in_boxes(boxes, point):
             print "This is neighborhood", neighborhood.name 
             return neighborhood
 
+def tweets_from_search(handler):
+    for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
+        handler(tweet)
 
+class StreamListenerToHandler(StreamListener):
+    def __init__(self, handler):
+        self.handler = handler
 
+    def on_data(self, data):
+        tweet = Status.parse(tweepy_api, json.loads(data))
+        self.handler(tweet)
 
-boxes = build_boxes()
-num_tweets = 0
-for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
+    def on_error(self, status):
+        print "something broken %s" % status
+
+def tweets_from_stream(handler):
+    stream = Stream(auth, StreamListenerToHandler(handler))
+    stream.filter(track=['san francisco'])
+
+def handle_tweet(tweet):
+    global num_tweets
     num_tweets += 1
+    print 'got tweet: %s' % bs(tweet.text)
     if num_tweets % 100 == 0:
         print "X" * 10, num_tweets
         # break
+    content = Content()
     if tweet.coordinates:
+        print "tweet had a location"
         tweet_text = tweet.text
         tweetwhen = bs(tweet.created_at)
         s = tweet_text.split()
@@ -83,9 +100,11 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
         lat = tweet.coordinates["coordinates"][0]
         lon = tweet.coordinates["coordinates"][1]
         point = Point(lat, lon)
+
         neighborhood = find_in_boxes(boxes, point)
         if neighborhood is None:
-            continue
+            print "tweet didn't have a neighborhood; skipping"
+            return
         print type(tweet_text)
         print bs(tweet_text)
         print neighborhood.name
@@ -94,12 +113,20 @@ for tweet in tweepy.Cursor(api.search, q='san francisco').items(1000):
         content.timestamp = tweetwhen
 #        content.hashtags = " ".join(tags) 
         try:
-	        db.session.add(content)
-	        db.session.commit()
-    	except Exception, e:
+            db.session.add(content)
+            print ">>>>>> adding"
+            db.session.commit()
+        except Exception, e:
             print "error, not committing"
             traceback.print_exc()
 
 
 
+if __name__ == '__main__':
+    boxes = build_boxes()
+    num_tweets = 0
 
+    if False:
+        tweets_from_search(handle_tweet)
+    else:
+        tweets_from_stream(handle_tweet)
