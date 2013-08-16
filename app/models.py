@@ -1,28 +1,9 @@
 
 from sqlalchemy import create_engine, types 
 from sqlalchemy.orm import sessionmaker
-from app import db
-import tweepy
-import json
-import pygeocoder
-from pygeocoder import Geocoder
-import app 
-from shapely.geometry import box, Polygon, Point
-
-
-consumer_key = '8vT4akwvPR1sWQIbO6y8g'
-consumer_secret = '2YQxdvSVPerI51CoewMeIhyKsm8niwKZyuPIQAVg6s'
-access_key= '21369282-5h31qLNIH68WoJIvfoU01DK191ixS8W9g67y41QQ'
-access_secret= 'H2B6Ks97UbPs8XGxRFXNoXQpwO3Os4NTBvNi6b9B0w'
-
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_key, access_secret)
-
-api = tweepy.API(auth) 
-#modify to store the boundaries
-#next seed 
-# change data model to have a column for each corner of the bounding box 
-#that way i can say "if point.within(neighborhood.bottomLeft, neighborhood.bottomRight, etc"
+from app import db 
+import json  
+import app  
 
 TWITTER_SOURCE_ID = 1
 
@@ -33,8 +14,7 @@ class Neighborhood(db.Model):
 	west_long = db.Column(db.DECIMAL, unique=False)
 	north_lat = db.Column(db.DECIMAL, unique=False)
 	east_long = db.Column(db.DECIMAL, unique=False)
-	name = db.Column(db.String(64), unique = True)
-	#takes a geo tuple and tests to see which neighborhood it fits. 
+	name = db.Column(db.String(64), unique = True) 
 
 class Source(db.Model):
 	__tablename__="source"
@@ -52,23 +32,21 @@ class Content(db.Model):
 	hashtags = db.Column(db.String(240))
 	source_id = db.Column(db.Integer, db.ForeignKey('source.id'))
 
+class Ratings_7day(db.Model):
+	__tablename__="rating7"
+	id = db.Column(db.Integer, primary_key = True)
+	neighborhood_id = db.Column(db.Integer, db.ForeignKey('content.neighborhood_id'))
+	timestamp = db.Column(db.DateTime, db.ForeignKey('content.timestamp'))
 
-# class Ratings_24():
-# #aggregating data from Content for display
-# #this gets cleared once a week
+class SF_Tweets(db.Model):
+	__tablename__ = "all_sf"
+	id = db.Column(db.Integer, primary_key = True)
+	hashtags = db.Column(db.String(240))
+	timestamp = db.Column(db.DateTime)
+	message = db.Column(db.String(280))
+	geo = db.Column(db.Integer)
 
 
-# class Ratings_7day():
-# #aggregating data from ratings_24 for display
-# #this gets cleared every Monday
-
-
-# class Ratings_month():
-# #aggreagting data from ratings_7day for display
-# #this doesn't get cleared
-
-
-# class Ratings_year():
-# #this doesn't get cleared
+#create Ratings_7day in sqlite3
 
 db.create_all()
