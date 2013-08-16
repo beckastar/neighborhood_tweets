@@ -79,46 +79,47 @@ def handle_tweet(tweet):
         print "X" * 10, num_tweets
         # break
     content = Content()
+    tweet_text = tweet.text
+    tweetwhen = bs(tweet.created_at)
+    s = tweet_text.split()
+    #tags = set()
+    for word in s:
+        if word.startswith("#"):
+            word = bs(word)
+            if content.hashtags == None:
+                content.hashtags = ""
+            else:
+                content.hashtags = content.hashtags + word 
+    content.message = tweet_text
+    content.timestamp = tweetwhen
+#1. put all tweets in Content
+#2. handle hashtags
+
+#change location for start of loop
     if tweet.coordinates:
         print "tweet had a location"
-        tweet_text = tweet.text
-        tweetwhen = bs(tweet.created_at)
-        s = tweet_text.split()
-        #tags = set()
-        for word in s:
-            if word.startswith("#"):
-                word = bs(word)
-                if content.hashtags == None:
-                    content.hashtags = ""
-                else:
-                    # try:
-                    content.hashtags = content.hashtags + word 
-                    # except:
-                        # UnicodeDecodeError
-        #print tags
-        # print "json object coordinates", tweet.coordinates['coordinates'][0][1]
         lat = tweet.coordinates["coordinates"][0]
         lon = tweet.coordinates["coordinates"][1]
         point = Point(lat, lon)
 
         neighborhood = find_in_boxes(boxes, point)
         if neighborhood is None:
-            print "tweet didn't have a neighborhood; skipping"
+            print "tweet didn't have a neighborhood"
             return
         print type(tweet_text)
         print bs(tweet_text)
         print neighborhood.name
         content.neighborhood_id = neighborhood.id
-        content.message = tweet_text
-        content.timestamp = tweetwhen
 #        content.hashtags = " ".join(tags) 
-        try:
-            db.session.add(content)
-            print ">>>>>> adding"
-            db.session.commit()
-        except Exception, e:
-            print "error, not committing"
-            traceback.print_exc()
+    try:
+        db.session.add(content)
+        print ">>>>>> adding"
+        db.session.commit()
+    except Exception, e:
+        print "error, not committing"
+        traceback.print_exc()
+
+    # add tweet to all_sf        
 
 
 
