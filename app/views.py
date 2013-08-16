@@ -8,13 +8,13 @@ from flask import jsonify
 @app.route("/fish")
 def results_json():
 	cols = ['neighborhood_id']
-	data = Content.query.filter(Content.neighborhood_id != None).all()
+	data = Content.query.filter(Content.hashtags != None).all()
 	counts = {}
 	for c in data:
-		if counts.get(c.neighborhood_id):
-			counts[c.neighborhood_id] += 1
+		if counts.get(c.timestamp):
+			counts[c.timestamp] += 1
 		else:
-			counts[c.neighborhood_id] = 1
+			counts[c.timestamp] = 1
 	c = jsonify(counts)
 	return c
 
@@ -26,6 +26,34 @@ def make_list():
 		data_dict[d.name]= d.id
 	j = jsonify(data_dict)
 	return j 
+
+@app.route("/hashtags")
+def hashtag_dict():
+	hashtags = Content.query.filter(Content.hashtags !=None).all()
+	for d in hashtags:
+		hashtags = d.hashtags.split()
+	hashdict = {}
+	for d in hashtags:
+		if hashdict.get(d):
+			hashdict[d] +=1
+		else:
+			hasdict[d]= 1
+	h = jsonify(hashdict)
+	return h
+
+	
+	
+	# for item in d.hashtags:
+	# 	hashdict[item] = 0
+	# #create new key for each hashtag
+	# #value is hashtag countd.hashtags(keys)
+	# 	for key in hashdict:
+	# 		for item in d.hashtags:
+	# 			if item == key:
+	# 				hashdict[item] +=1
+	# h = jsonify(hashdict)
+	# return h
+
 
 @app.route("/combine")
 def dict_merged_tables():
