@@ -89,13 +89,10 @@ def handle_tweet(tweet):
             if content.hashtags == None:
                 content.hashtags = ""
             else:
-                content.hashtags = content.hashtags + word 
+                content.hashtags = content.hashtags + " " +word 
     content.message = tweet_text
     content.timestamp = tweetwhen
-#1. put all tweets in Content
-#2. handle hashtags
 
-#change location for start of loop
     if tweet.coordinates:
         print "tweet had a location"
         lat = tweet.coordinates["coordinates"][0]
@@ -118,10 +115,6 @@ def handle_tweet(tweet):
     except Exception, e:
         print "error, not committing"
         traceback.print_exc()
-
-    # add tweet to all_sf        
-
-
 
 if __name__ == '__main__':
     boxes = build_boxes()
