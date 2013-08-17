@@ -29,31 +29,17 @@ def make_list():
 
 @app.route("/hashtags")
 def hashtag_dict():
-	hashtags = Content.query.filter(Content.hashtags !=None).all()
-	for d in hashtags:
-		hashtags = d.hashtags.split()
 	hashdict = {}
-	for d in hashtags:
-		if hashdict.get(d):
-			hashdict[d] +=1
-		else:
-			hasdict[d]= 1
+	listofcontents = Content.query.filter(Content.hashtags !=None).all()
+	for content in listofcontents:
+		stringofhashes = content.hashtags
+		for hashtag in stringofhashes.split():
+			if hashtag not in hashdict:
+				hashdict[hashtag]=1
+			else:
+				hashdict[hashtag] +=1
 	h = jsonify(hashdict)
 	return h
-
-	
-	
-	# for item in d.hashtags:
-	# 	hashdict[item] = 0
-	# #create new key for each hashtag
-	# #value is hashtag countd.hashtags(keys)
-	# 	for key in hashdict:
-	# 		for item in d.hashtags:
-	# 			if item == key:
-	# 				hashdict[item] +=1
-	# h = jsonify(hashdict)
-	# return h
-
 
 @app.route("/combine")
 def dict_merged_tables():
@@ -83,8 +69,13 @@ def dict_merged_tables():
 				newdict[key]=counts[k]
 	new = jsonify(newdict)
 	return new 
+@app.route("/hashtags")
+def hello2():
+	return render_template("ratio.html")
 
-
+@app.route("/ratio")
+def hello1():
+	return render_template("ratio.html")
 
 @app.route('/')
 @app.route('/charts')
