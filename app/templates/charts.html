@@ -4,31 +4,58 @@
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript">
-     
       google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
+      google.setOnLoadCallback(init);
+      function init(){
+        drawChart1();
+        drawChart2();
+      }
+      function drawChart1(init) {
         var datatable
         var chart = new google.visualization.PieChart(document.getElementById('chart1'));
-         $.get('/combine', function(data){
+        $.get('/combine', function(data){
           // Combine doesn't yield a string yet
-            console.log(data)
-            var a = []
-            for (var thing in data) {
-              a.push([thing, data[thing]])
-            }
-            console.log(a)
-            datatable = google.visualization.arrayToDataTable(a, false);
-            var options = {
-              title: 'Where'
+          console.log(data)
+          var a = []
+          for (var thing in data) {
+            a.push([thing, data[thing]])
+          }
+          console.log(a)
+          datatable = google.visualization.arrayToDataTable(a, false);
+          var options = {
+            title: 'Where'
+          };
+          chart.draw(datatable, options);
+        });
 
-            };
-            chart.draw(datatable, options);
-          })
-         var options = {
-          chartArea:{left:0,top:0,width:"20%",height:"20%"}
-}
+        var options = {
+          chartArea: { 
+            left:0,
+            top:0,
+            width:"20%",
+            height:"20%"
+          }
+        }
       }
+      function drawChart2(init) {
+        var datatable
+        var chart = new google.visualization.PieChart(document.getElementById('chart2'));
+        $.get('/worddict', function(data) {
+          // Combine doesn't yield a string yet
+          console.log(data);
+          var a = [];
+          for (var thing in data) {
+            a.push([thing, data[thing]]);
+          }
+          console.log(a);
+          datatable = google.visualization.arrayToDataTable(a, false);
+          var options = {
+            title: 'Where'
+          };
+          chart.draw(datatable, options);
+        })
+      }
+
     </script>
   </head>
   <body>
@@ -42,9 +69,25 @@
     height: 400px;
     background-image: url(your-path-here.jpg);
     background-size: 100% 100%;
-}​
+}
 </div> </td>
-<td> Testing </td>
+<td> 
+<div id="chart2" style="width: 700px; height: 500px;">
+   {
+    width: 100%;
+    height: 400px;
+    background-image: url(your-path-here.jpg);
+    background-size: 100% 100%;
+}
+</td>
+</tr>
+<tr>
+ <td> More text </td>
+ <td> Still more text OMG why is there so much text?????</td>
+
+</tr>
+</table>
+
     {{c}}
   </body>
 </html>
