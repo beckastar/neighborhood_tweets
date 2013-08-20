@@ -11,27 +11,6 @@ import unicodedata
 import json
 
 
-# @app.route("/fish")
-# def results_json():
-# 	cols = ['neighborhood_id']
-# 	data = Content.query.filter(Content.hashtags != None).all()
-# 	counts = {}
-# 	for c in data:
-# 		if counts.get(c.timestamp):
-# 			counts[c.timestamp] += 1
-# 		else:
-# 			counts[c.timestamp] = 1
-# 	c = jsonify(counts)
-# 	return c
-
-# @app.route("/testing")
-# def make_list():
-# 	thisdata = Neighborhood.query.all()
-# 	data_dict = {} 
-# 	for d in thisdata:
-# 		data_dict[d.name]= d.id
-# 	j = jsonify(data_dict)
-# 	return j 
  
 def transform(word):
 	word = word.lower()
@@ -53,7 +32,6 @@ def transform(word):
 		return
 	return word
 
-@app.route("/worddict")
 def word_dict():
 	worddict = {}
 	display = {}
@@ -76,39 +54,25 @@ def word_dict():
 	for word in worddict:
 		if worddict[word] >4:
 			display[word] = worddict[word]
+	return display
 
-	return jsonify(display)
+@app.route("/worddict")
+def make_json():
+	j =jsonify(word_dict())
+	return j
 
 @app.route("/wordarray")
 def word_array():
-	wordarray = []
-	countingdict = {}
-	otherarray=[]
-	#relative frequency
-	listofcontents = Content.query.all()
-	for content in listofcontents:
-		stringofwords = content.message
-		if not stringofwords:
-			continue
-		for word in stringofwords.split():
-			word = transform(word)
-			if word is None:
-				continue
-			wordarray.append([word, ""])
-	for word in wordarray:
-		if countingdict.get(word[0]):
-			countingdict[word[0]] += 1
-		else:
-			countingdict[word[0]] =1
-	i = 0
-	for k in countingdict:
-		while i<=countingdict[k]:
-			otherarray.append([k,""])
-			i+=1
-	print otherarray					
-	#chuck things out at this point
-	#print countingdict
-	return json.dumps(otherarray)
+	dictionary = word_dict()
+	wordlist = dictionary.items()
+	def thing(t):
+		return t[1]
+	wordlist.sort(key=thing, reverse=True)
+	wordlist = wordlist[:20]
+	wordarray = [[i[0]]*i[1] for i in wordlist]
+	new_array = sum(wordarray, [])
+	another_array = [[word, ""] for word in new_array]
+	return json.dumps(another_array)
 
 @app.route("/combine")
 def dict_merged_tables(): 
@@ -154,26 +118,7 @@ def find_privacy():
 	jd = jsonify(d)
 	return jd
 
- 
-# @app.route("/bigrams")
-# def find_word_pairs():
-# 	data = Content.query.all() 
-# 	punctuation = ".,;:@!.()_#1-+$?^/23456'7890]\&["
-# 	bigram = {}
-# 	for content in data:
-# 		words = content.message
-# 		if not words:
-# 			continue
-# 		words = unicodedata.normalize('NFKD', words).encode('ascii','ignore')
-# 		tokens  = words.split()
-# 	bigs= bigrams(tokens)
-# 	for pair in bigs:
-# 		if bigram.get(pair):
-# 			bigram[pair] +=1
-# 		else:
-# 			bigram[pair] = 1
-# 	jasbig = jsonify(bigram)
-# 	return jasbig
+
 
 
 @app.route("/bigrams")
@@ -194,14 +139,6 @@ def find_word_pairs():
 				else:
 					bigr[tup] = 1
    	return str(bigr)
-	# jasbig =jsonify(bigram)
-	# return jasbig
-
-
-# @app.route("/just_now")
-
-# @app.route("/yesterday")
-# def yesterday():
 
 
 @app.route('/')
