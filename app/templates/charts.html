@@ -1,93 +1,141 @@
 
 <html>
-  <head>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(init);
-      function init(){
-        drawChart1();
-        drawChart2();
-      }
-      function drawChart1(init) {
-        var datatable
-        var chart = new google.visualization.PieChart(document.getElementById('chart1'));
-        $.get('/combine', function(data){
-          // Combine doesn't yield a string yet
-          console.log(data)
-          var a = []
-          for (var thing in data) {
-            a.push([thing, data[thing]])
-          }
-          console.log(a)
-          datatable = google.visualization.arrayToDataTable(a, false);
-          var options = {
-            title: 'Where'
-          };
-          chart.draw(datatable, options);
-        });
+	<head>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://visapi-gadgets.googlecode.com/svn/trunk/wordcloud/wc.css"/>
+  	  	<script type="text/javascript" src="http://visapi-gadgets.googlecode.com/svn/trunk/wordcloud/wc.js"></script>
 
-        var options = {
-          chartArea: { 
-            left:0,
-            top:0,
-            width:"20%",
-            height:"20%"
-          }
-        }
-      }
-      function drawChart2(init) {
-        var datatable
-        var chart = new google.visualization.PieChart(document.getElementById('chart2'));
-        $.get('/worddict', function(data) {
-          // Combine doesn't yield a string yet
-          console.log(data);
-          var a = [];
-          for (var thing in data) {
-            a.push([thing, data[thing]]);
-          }
-          console.log(a);
-          datatable = google.visualization.arrayToDataTable(a, false);
-          var options = {
-            title: 'Where'
-          };
-          chart.draw(datatable, options);
-        })
-      }
+		<script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+			google.setOnLoadCallback(init);
+			function init(){
+				drawChart1();
+				drawChart2();
+				drawChart3();
+				drawChart4();
+			}
+			function drawChart1(init) {
+				var datatable
+				var chart = new google.visualization.PieChart(document.getElementById('chart1'));
+				$.get('/combine', function(data){
+					// Combine doesn't yield a string yet
+					console.log(data)
+					var a = []
+					for (var thing in data) {
+						a.push([thing, data[thing]])
+					}
+					console.log(a)
+					datatable = google.visualization.arrayToDataTable(a, false);
+					var options = {
+						title: "where it\'s at"
+					};
+					chart.draw(datatable, options);
+				});
 
-    </script>
-  </head>
-  <body>
+				var options = {
+					chartArea: { 
+						left:0,
+						top:0,
+						width:"20%",
+						height:"20%"
+					}
+				}
+			}
+			function drawChart2(init) {
+				var datatable
+				var chart = new google.visualization.PieChart(document.getElementById('chart2'));
+				$.get('/worddict', function(data) {
+					console.log(data);
+					var a = [];
+					for (var thing in data) {
+						a.push([thing, data[thing]]);
+					}
+					console.log(a);
+					datatable = google.visualization.arrayToDataTable(a, false);
+					var options = {
+						title: 'what they say'
+					};
+					chart.draw(datatable, options);
+				});
+				 var options = {
+					chartArea: { 
+						left:0,
+						top:0,
+						width:"20%",
+						height:"20%"
+					}
+				}
+			}
+				// the pie chart function below is not rendering the dictionary!!!!!!!
+						//             {
+						//   "has id": 41, 
+						//   "no id": 850
+						// }
+			function drawChart3(init){
+				var datatable
+				var chart = new google.visualization.PieChart(document.getElementById('chart3'));
+				$.get('/geotagged_ratio', function(data) {
+					console.log(data);
+					var a = [];
+					for (var thing in data) {
+						// the line below needs to change to reflect just hte values in the dictionary above the function
+						a.push([thing, data[thing]]);
+					}
+					console.log(a);
+					datatable = google.visualization.arrayToDataTable(a, false);
+					var options = {
+						title: 'what is hidden'
+					};
+					chart.draw(datatable, options);
+				});
+				 var options = {
+					chartArea: { 
+						left:0,
+						top:0,
+						width:"20%",
+						height:"20%"
+					}
+				}
+			};
+			function drawChart4(init) {
+				var datatable
+				var chart = new WordCloud(document.getElementById('chart4'));
+				$.get('/wordarray', function(data) {
+					console.log("This is the data array")
+					console.log(typeof data);
+					data = JSON.parse(data)
+					datatable = google.visualization.arrayToDataTable(data, false);
+					var options = {
+						stopwords : ["sfo","...","restaurant","not","location" ,"hotel" ,"se","f","venta","ya","yo","su","un","vamos","really","sf","s","para","st","linkedin's","seguridad","diputado","arroyo","los","al","cat","lo","founder","introduces","drops","bathroom","coffee","llega","llegar","cafe","degrees","photo","tells","building","street","y","beautiful","app","beach","today","jose","hp","edition","por", "favorite","cofee","chance", "agency","area","heart","heart","eparegion","ers","center","check","can&amp;t","vs","bambu","boletos","airport","bridge","boletas",  "que","processar","q","am","pm","partido","park","open","online","next","news","mede","looking","lol","las","ht","jueves", "international","its","into","in","i","going","hq","hoy","golden","gate","faltes","este","es","desde", "con","d","b","el","la","del", "others","en","abc7newsbayarea","chronicle","chubby","checker","cogita","at&amp;t","agosto","being","amp","best","california","ca", "sanfrancisco","francisco","th", "the","rt","bro", "o","via","w","a","bay","ca","francisco's","it&apos;s","quer","plaza","la", "francisco", "i&apos;ll","i&apos;m", "de", "san", "ca", "fran", "city","the","name","of","very","to","through","and","just","a","form","in","much","is","great","it","think","you","say","that","help","he","low","was","line","for","before","on","turn","are","cause","with","same","as","mean","I","differ","his","move","they","right","be","boy","at","old","one","too","have","does","this","tell","from","sentence","or","set","had","three","by","want","hot","air","but","well","some","also","what","play","there","small","we","end","can","put","out","home","other","read","were","hand","all","port","your","large","when","spell","up","add","use","even","word","land","how","here","said","must","an","big","each","high","she","such","which","follow","do","act","their","why","time","ask","if","men","will","change","way","went","about","light","many","kind","then","off","them","need","would","house","write","picture","like","try","so","us","these","again","her","animal","long","point","make","mother","thing","world","see","near","him","build","two","self","has","earth","look","father","more","head","day","stand","could","own","go","page","come","should","did","country","my","found","sound","answer","no","school","most","grow","number","study","who","still","over","learn","know","plant","water","cover","than","food","call","sun","first","four","people","thought","may","let","down","keep","side","eye","been","never","now","last","find","door","any","between","new","city","work","tree","part","cross","take","since","get","hard","place","start","made","might","live","story","where","saw","after","far","back","sea","little","draw","only","left","round","late","man","run","year","don&apos;t","came","while","show","press","every","close","good","night","me","real","give","life","our","few","under","stop"]
 
-  <table>
-  <tr>
-  <td>
-    <div id="chart1" style="width: 700px; height: 500px;">
-   {
-    width: 100%;
-    height: 400px;
-    background-image: url(your-path-here.jpg);
-    background-size: 100% 100%;
-}
-</div> </td>
-<td> 
-<div id="chart2" style="width: 700px; height: 500px;">
-   {
-    width: 100%;
-    height: 400px;
-    background-image: url(your-path-here.jpg);
-    background-size: 100% 100%;
-}
-</td>
-</tr>
-<tr>
- <td> More text </td>
- <td> Still more text OMG why is there so much text?????</td>
+					};
+					chart.draw(datatable, options);
+				});
+			}
+			
 
-</tr>
-</table>
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<div id="chart1" style="width: 700px; height: 500px;"></div>
+			</td>
 
-    {{c}}
-  </body>
+			<td> 
+				<div id="chart2" style="width: 700px; height: 500px;"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="chart3" style="width: 700px; height: 500px;"> </div>
+			</td>
+			<td>
+				<div id="chart4" style="width: 700px; height: 500px;"></div>
+			</td>
+		</tr>
+	</table>
+</body>
 </html>
